@@ -1,0 +1,194 @@
+2018-06-12 13:51 +08:00: Error: ER_DATA_TOO_LONG: Data too long for column 'guests_job' at row 1
+    at Query.Sequence._packetToError (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:250:12)
+    at readableAddChunk (_stream_readable.js:237:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:208:25)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\guestsDao.js:21:32
+    at nextTask (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5310:14)
+    at next (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5317:9)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:958:16
+    at Query._callback (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\guestsDao.js:18:25)
+    at Query.Sequence.end (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+2018-06-14 10:14 +08:00: Error: ER_DATA_TOO_LONG: Data too long for column 'schedule_time_content' at row 1
+    at Query.Sequence._packetToError (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:250:12)
+    at readableAddChunk (_stream_readable.js:237:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:208:25)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\scheduleDao.js:183:24
+    at Ping.onOperationComplete [as _callback] (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Ping.Sequence.OkPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:97:8)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+2018-06-14 16:56 +08:00: Error: ER_TRUNCATED_WRONG_VALUE_FOR_FIELD: Incorrect string value: '\xF0\x9F\x8E\x80\xE6\xB5...' for column 'user_wxnickName' at row 1
+    at Query.Sequence._packetToError (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:250:12)
+    at readableAddChunk (_stream_readable.js:237:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:208:25)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\wxuserDao.js:42:17
+    at nextTask (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5310:14)
+    at next (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5317:9)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:958:16
+    at Query._callback (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\wxuserDao.js:39:7)
+    at Query.Sequence.end (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+2018-06-19 15:54 +08:00: Error: WARN_DATA_TRUNCATED: Data truncated for column 'product_price' at row 1
+    at Query.Sequence._packetToError (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:250:12)
+    at readableAddChunk (_stream_readable.js:237:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:208:25)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\adminproductDao.js:22:32
+    at nextTask (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5310:14)
+    at next (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5317:9)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:958:16
+    at Query._callback (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\adminproductDao.js:19:25)
+    at Query.Sequence.end (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+2018-06-21 14:12 +08:00: node_redis: Deprecated: The GET command contains a "undefined" argument.
+This is converted to a "undefined" string now and will return an error from v.3.0 on.
+Please handle this in your code to make sure everything works as you intended it to.
+2018-06-21 14:12 +08:00: node_redis: Deprecated: The GET command contains a "undefined" argument.
+This is converted to a "undefined" string now and will return an error from v.3.0 on.
+Please handle this in your code to make sure everything works as you intended it to.
+2018-06-21 14:12 +08:00: node_redis: Deprecated: The GET command contains a "undefined" argument.
+This is converted to a "undefined" string now and will return an error from v.3.0 on.
+Please handle this in your code to make sure everything works as you intended it to.
+2018-06-21 14:13 +08:00: node_redis: Deprecated: The GET command contains a "undefined" argument.
+This is converted to a "undefined" string now and will return an error from v.3.0 on.
+Please handle this in your code to make sure everything works as you intended it to.
+2018-06-21 17:18 +08:00: Error: ER_DATA_TOO_LONG: Data too long for column 'schedule_time_character' at row 1
+    at Query.Sequence._packetToError (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:250:12)
+    at readableAddChunk (_stream_readable.js:237:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:208:25)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\scheduleDao.js:183:24
+    at Ping.onOperationComplete [as _callback] (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Ping.Sequence.OkPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:97:8)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+2018-06-22 10:05 +08:00: Error: ER_BAD_FIELD_ERROR: Unknown column 'mark' in 'field list'
+    at Query.Sequence._packetToError (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:250:12)
+    at readableAddChunk (_stream_readable.js:237:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:208:25)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\ordersDao.js:15:24
+    at Ping.onOperationComplete [as _callback] (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Pool.js:110:5)
+    at Ping.Sequence.end (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Ping.Sequence.OkPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:97:8)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+2018-06-22 10:47 +08:00: Error: ER_BAD_NULL_ERROR: Column 'product_thumimg_url' cannot be null
+    at Query.Sequence._packetToError (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:250:12)
+    at readableAddChunk (_stream_readable.js:237:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:208:25)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\adminproductDao.js:22:32
+    at nextTask (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5310:14)
+    at next (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5317:9)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:958:16
+    at Query._callback (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\adminproductDao.js:19:25)
+    at Query.Sequence.end (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+2018-06-25 23:14 +08:00: Error: ER_DATA_TOO_LONG: Data too long for column 'user_wxcity' at row 1
+    at Query.Sequence._packetToError (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:52:14)
+    at Query.ErrorPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:279:23)
+    at Parser.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:39:18)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:103:28)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at addChunk (_stream_readable.js:250:12)
+    at readableAddChunk (_stream_readable.js:237:11)
+    --------------------
+    at Protocol._enqueue (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\Protocol.js:145:48)
+    at PoolConnection.query (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\Connection.js:208:25)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\wxuserDao.js:42:17
+    at nextTask (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5310:14)
+    at next (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:5317:9)
+    at C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\async\dist\async.js:958:16
+    at Query._callback (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\dao\wxuserDao.js:39:7)
+    at Query.Sequence.end (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Sequence.js:88:24)
+    at Query._handleFinalResultPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:139:8)
+    at Query.EofPacket (C:\Users\Administrator\Desktop\IV-\工作室小程序\server\zdh\node_modules\mysql\lib\protocol\sequences\Query.js:123:8)
+2018-06-30 06:01 +08:00: node_redis: Deprecated: The GET command contains a "undefined" argument.
+This is converted to a "undefined" string now and will return an error from v.3.0 on.
+Please handle this in your code to make sure everything works as you intended it to.
+2018-06-30 06:01 +08:00: node_redis: Deprecated: The GET command contains a "undefined" argument.
+This is converted to a "undefined" string now and will return an error from v.3.0 on.
+Please handle this in your code to make sure everything works as you intended it to.

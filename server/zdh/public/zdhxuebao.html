@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自动化学报</title>
+<style>
+	html,body{height:100%;overflow: hidden;}
+	iframe{
+		margin: 0px;
+		width: 100%;
+		height:100%;
+		border: none;
+	}
+</style>
+<script>
+	var xhr=createXHR();
+	xhr.onreadystatechange=function(){
+		if(xhr.readyState==4){
+			if((xhr.status >=200 && xhr.status < 300) || xhr.status == 304){
+				alert(xhr.responseText);
+			}else{
+				alert('request was unsuccessful:' + xhr.status);
+			}
+		}
+	};
+	xhr.open("get","http://html.rhhz.net:8080/wechat/archivejournal/?issueName=zdhxb",true);
+	xhr.send(null);
+	
+	function  createXHR(){ 
+    
+    //检测原生XHR对象是否存在，如果存在刚返回它的新实例； 
+    //如果不存在，则检测ActiveX对象; 
+    //如果两个都不存在，就抛出一个错误。 
+    
+    if(typeof XMLHttpRequest != "undefined"){ 
+        return new XMLHttpRequest(); 
+    }else if(typeof ActiveXObject != "undefined"){ 
+        //适合IE7之前的版本 
+        if(typeof arguments.callee.activeXString != "string"){ 
+            var versions = ["MSXML2.XMLHttp.6.0","MSXML2.XMLHttp.3.0","MSXML.XMLHttp"]; 
+            for(var i=0,len=versions.length; i<len; i++){ 
+                try{ 
+                    var xhr = new ActiveXObject(versions[i]); 
+                    arguments.callee.activeXString = versions[i]; 
+                    return xhr; 
+                }catch (ex){ 
+                    //跳过 
+                } 
+            } 
+        } 
+        
+        return new ActiveXObject(arguments.callee.activeXString); 
+    }else{ 
+        throw new Error("No XHR object available."); 
+    }; 
+}
+</script>
+
+</head>
+
+<body>
+<iframe src="http://html.rhhz.net:8080/wechat/archivejournal/?issueName=zdhxb">
+	
+</iframe>
+
+</body>
+</html>

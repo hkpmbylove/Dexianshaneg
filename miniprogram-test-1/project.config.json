@@ -80,11 +80,18 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 8,
 					"name": "测试",
 					"pathName": "pages/login/login",
 					"query": "scene=qaii",
 					"scene": 1011
+				},
+				{
+					"id": 9,
+					"name": "页面传值",
+					"pathName": "pages/subpages/News/News",
+					"query": "sence=qaii",
+					"scene": null
 				}
 			]
 		}

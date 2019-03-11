@@ -252,6 +252,11 @@ Page({
     var sence=decodeURIComponent(options)
     if (sence!=undefined){
       console.log(options.scene);
+      wx.setStorage({
+        key: "sence",
+        data: options.scene
+      })
+
     }
   },
   contact: function () {

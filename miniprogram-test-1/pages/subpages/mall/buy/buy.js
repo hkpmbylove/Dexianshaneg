@@ -29,6 +29,7 @@ Page({
     num:'1',
     minusStatus: 'disabled',
     totalMoney: 0,
+    sence:""
   },
   /* 点击减号 */
   bindMinus: function () {
@@ -92,6 +93,8 @@ Page({
 
     var openid = app.globalData.token;
     var total = self.data.totalMoney;
+    var sence = self.data.sence;
+    console.log(sence)
     wx.request({
       url: serverURL + '/wxPay/wx_pay',
       data: {
@@ -188,6 +191,14 @@ Page({
           wxphone:res.data
         })
       }
+    }),
+    wx.getStorage({
+      key: 'sence',
+      success: function(res) {
+        self.setData({
+          sence: res.data
+        })
+      },
     })
   }
 })

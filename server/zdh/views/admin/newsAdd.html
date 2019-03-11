@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../public/src/css/layui.css">
+    <link rel="stylesheet" href="../public/stylesheets/layer.css"> 
+    
+    <link rel="stylesheet" href="../public/stylesheets/welcome.css">
+    <link rel="stylesheet" href="../public/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/javascripts/datatable/datatable.css">
+    <title>登录成功</title>
+    <script src="../public/javascripts/jquery-3.2.1.min.js"> </script>
+    <!-- <script src="../public/src/lay/modules/laydate.js"></script>  -->
+     <script src="../public/javascripts/laydate/laydate.js"></script> 
+     <script src="../public/javascripts/layer/layer.js"></script>
+    <script src="../public/src/layui.js"></script>
+    <script src="../public/javascripts/bootstrap.min.js"></script>
+    <script src="../public/javascripts/datatable/datatable.js"></script>
+    <script src="../public/js/welcome.js"></script>
+</head>
+<body>
+    
+    <div class="news-box">
+        <div class="news-title">
+            <h2>添加新闻</h2>
+        </div>
+        <div class="news-content">
+
+        <div class="news-name ipt-title date-style">
+            <div class="input-group">
+                <input type="text" class="form-control" id="topic"   name="topic" maxlength="20"  placeholder="标题（5-20个字符）" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">0/30</span>
+            </div>
+        </div>
+
+        <div class="date-style">
+            <div class="layui-inline">
+                <label class="layui-form-label">日期</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="datetimeStart" name="datetimeStart" class="layui-input" placeholder="yyyy-MM-dd">
+                </div>
+            </div>
+        </div>
+        <textarea class="news-textarea date-style" id="Summary"  name="Summary"  rows="3" cols="10" maxlength="120"  ></textarea>
+        <div class="date-style">
+            <div class="layui-inline">
+                <label class="layui-form-label" style="width: 100px;">原文链接</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="originalUrl" name="originalUrl" class="layui-input" placeholder="原文链接" style="width:500px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="upImgBox">
+            <label class="layui-form-label" style="padding:0px;font-size:12px;color:#888;width:120px;float:right;display:inline-block;">(图片尺寸为151*90)</label>
+            <input id="image" type="file" style="display:inline-block;"  >
+            <div id="preview"></div>
+            </div>
+            <div class="news-btn date-style">
+                <button id="uploadNews" class="btn btn-danger">发表</button>
+            </div>
+        </div>
+    </div> 
+    
+    <script type="text/javascript" src="../public/news/nicEdit.js"></script>
+    <script type="text/javascript">
+        bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+    </script>
+</body>
+
+<script>
+    
+    $(function(){
+        
+        $("#uploadNews").on("click",function(){
+            var str=$("#Summary").prev("div").text();
+            
+            var str2=$("#originalUrl").prev("div").html();
+           console.log(str2);
+       if( $("#datetimeStart").val()==""||$("#username").val()==""||$("#topic").val()== ""||$("#Summary").val()==""||$("#image").val()==""||$("#originalUrl").val()==""){
+        layer.msg('您的内容不能为空', {
+            icon: 1,
+            time: 1000
+          });
+       }
+        var formData = new FormData();
+        formData.append("datetimeStart", $("#datetimeStart").val());
+        formData.append("username", $("#username").val());
+        formData.append("originalUrl",$("#originalUrl").val());
+        formData.append("topic", $("#topic").val());
+        formData.append("Summary",str);
+        formData.append("image", $("#image")[0].files[0]);
+        $.ajax({
+            url:'/image/uploadImage',
+            type: 'post',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if(data.msg=="会议信息上传成功"){
+                      $("#newsManage-btn").click();
+                      layer.msg('会议信息上传成功', {
+                        icon: 1,
+                        time: 1000
+                      });
+                }else{
+                    layer.msg('您的操作有误', {
+                        icon: 1,
+                        time: 1000
+                      });
+                }             
+            }
+        });
+    })
+     $("#image").on("change",function(){
+         var file = this;
+        var prevDiv = document.getElementById('preview');
+        if (file.files && file.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (evt) {
+                prevDiv.innerHTML = '<img src="' + evt.target.result + '" />';
+            }
+            reader.readAsDataURL(file.files[0]);
+        } else {
+            prevDiv.innerHTML = '<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>';
+        }
+     })
+           
+    })
+</script>
+</html>
