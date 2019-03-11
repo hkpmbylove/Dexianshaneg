@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class='subContainer'>
+ <view class="banner">
+  <image src='https://www.iv2018.cn/public/images/ieeeImages/ticket/banner.jpg' class='bann' mode='widthFix'></image>
+ </view>
+
+<block wx:for-items="{{list}}">
+ <view class='paiosele' bindtap='toDetail' id="{{item.ticket_id}}" data-index="{{index}}">
+  <view class='contern'>
+    <text class='title'>{{item.ticket_mark}} </text><!-- ticket_type -->
+     <view class='robbing' wx:if="{{item.ticket_status==0}}">抢票中</view>
+     <view class='robbing' wx:if="{{item.ticket_status==1}}">未开始</view>
+    <text class="price">\n￥{{item.ticket_price}}</text>
+    <view class='line'></view>
+    <text class='subcon'><text style="color:red">票种说明：\n</text>{{item.ticket_details}}</text>
+  </view>  
+  </view>
+ </block>
+
+ </view> 
+ 
+ <view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

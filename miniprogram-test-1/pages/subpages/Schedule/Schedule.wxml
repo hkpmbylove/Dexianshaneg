@@ -1,0 +1,251 @@
+<!--index.wxml-->
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />
+      
+ </view>
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
+  <block  wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='schedule-list'>
+      <view class="{{schedul1?'schedule-date':'schedule-date-H'}}" bindtap='schedul1'>
+          <view class='schedule-week'>星期三</view>
+          <text class='schedule-day'>26</text>
+          <view class="schedule-D">DATE</view>  
+          <view class="{{line1?'schedule-dateBox':''}}"></view>    
+     </view>
+     <view class="{{schedul2?'schedule-date':'schedule-date-H'}}" bindtap='schedul2'>
+           <view class='schedule-week'>星期四</view>
+          <text class='schedule-day'>27</text>
+          <view class="schedule-D">DATE</view>
+          <view class="{{line2?'schedule-dateBox':''}}"></view>
+     </view>
+     <view class="{{schedul3?'schedule-date':'schedule-date-H'}}" bindtap='schedul3'>
+          <view class='schedule-week'>星期五</view>
+          <text class='schedule-day'>28</text>
+          <view class="schedule-D">DATE</view>
+          <view class="{{line3?'schedule-dateBox':''}}"></view>
+     </view>
+     <view class="{{schedul4?'schedule-date':'schedule-date-H'}}" bindtap='schedul4'>
+           <view class='schedule-week '>星期六</view>
+          <text class='schedule-day'>29</text>
+          <view class="schedule-D">DATE</view>
+          <view class="{{line4?'schedule-dateBox':''}}"></view>
+     </view>
+     <view class="{{schedul5?'schedule-date':'schedule-date-H'}}" bindtap='schedul5'>
+          <view class='schedule-week'>星期天</view>
+          <text class='schedule-day'>30</text>
+          <view class="schedule-D">DATE</view>
+          <view class="{{line5?'schedule-dateBox':''}}"></view>
+     </view>
+</view>
+<!--星期三-->
+<view class="noschedul {{line1?'show':'hide'}}" wx:if="{{dateList26.length==0}}">
+  暂无日程
+</view>
+<view wx:else="{{dateList26.length!==0}}">
+ <block wx:for="{{dateList26}}" wx:key="{{index}}"> 
+    <view class="schedule-footer {{line1?'show':'hide'}}" style='background:#fff url(https://www.iv2018.cn/public/images/ieeeImages/schedule-icon/line.png);'>
+    <!-- <image src='./../../../images/schedule-icon/line.png'></image> -->
+    <!--scheduleList 循环-->
+    <view class='scheduleLi'   bindtap='toggleBtn'  id="{{dateList26[index].schedule_time_id}}">
+      <view class='time'>
+     {{dateList26[index].schedule_time_dan}}
+      </view>
+      <image src='./../../../images/schedule-icon/3-08.png' mode='widthFix' class='img' />
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+          {{dateList26[index].schedule_time_content}}
+        </view>
+      </view>
+          <!--scheduleList子菜单-->
+    <view class='scheduleLi {{uhide==dateList26[index].schedule_time_id?"":"bright789_view_hide"}}'>
+      <view class='time2'>
+      </view>
+      <image src='./../../../images/schedule-icon/point.png' mode='widthFix' class='img' /> 
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+          人物：{{dateList26[index].schedule_time_character}}
+        </view>
+      </view>
+    </view>
+    
+    </view>
+    
+  </view>
+   </block> 
+  </view>
+<!--星期三-->
+  <view class="noschedul {{line2?'show':'hide'}}" wx:if="{{dateList27.length==0}}">
+    暂无日程
+  </view>
+  <view wx:else="{{dateList27.length!==0}}">
+   <block wx:for="{{dateList27}}" wx:key="{{index}}"> 
+      <view class="schedule-footer {{line2?'show':'hide'}}" style='background:#fff url(https://www.iv2018.cn/public/images/ieeeImages/schedule-icon/line.png);'>
+    
+    <!--scheduleList 循环-->
+    <view class='scheduleLi'   bindtap='toggleBtn'  id="{{dateList27[index].schedule_time_id}}">
+      <view class='time'>
+     {{dateList27[index].schedule_time_dan}}
+      </view>
+      <image src='./../../../images/schedule-icon/3-08.png' mode='widthFix' class='img' />
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+          {{dateList27[index].schedule_time_content}}
+        </view>
+      </view>
+          <!--scheduleList子菜单-->
+    <view class='scheduleLi {{uhide==dateList27[index].schedule_time_id?"":"bright789_view_hide"}}'>
+      <view class='time2'>
+      </view>
+      <image src='./../../../images/schedule-icon/point.png' mode='widthFix' class='img' /> 
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+           人物：{{dateList27[index].schedule_time_character}}
+        </view>
+      </view>
+    </view>
+    <!--scheduleList 子菜单-->
+    </view>
+  </view>
+</block>
+</view>
+<!--星期五-->
+<view class="noschedul {{line3?'show':'hide'}}" wx:if="{{dateList28.length==0}}">
+  暂无日程
+</view>
+<view wx:else="{{dateList28.length!==0}}">
+  <block wx:for="{{dateList28}}" wx:key="{{index}}"> 
+      <view class="schedule-footer {{line3?'show':'hide'}}" style='background:#fff url(https://www.iv2018.cn/public/images/ieeeImages/schedule-icon/line.png);'>
+    
+    <!--scheduleList 循环-->
+    <view class='scheduleLi'   bindtap='toggleBtn'  id="{{dateList28[index].schedule_time_id}}">
+      <view class='time'>
+     {{dateList28[index].schedule_time_dan}}
+      </view>
+      <image src='./../../../images/schedule-icon/3-08.png' mode='widthFix' class='img' />
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+          {{dateList28[index].schedule_time_content}}
+        </view>
+      </view>
+          <!--scheduleList子菜单-->
+    <view class='scheduleLi {{uhide==dateList28[index].schedule_time_id?"":"bright789_view_hide"}}'>
+      <view class='time2'>
+      </view>
+      <image src='./../../../images/schedule-icon/point.png' mode='widthFix' class='img' /> 
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+          人物：{{dateList28[index].schedule_time_character}}
+        </view>
+      </view>
+    </view>
+    <!--scheduleList 子菜单-->
+    </view>
+  </view>
+</block>
+</view>
+<!--星期五-->
+<!--星期六-->
+<view class="noschedul {{line4?'show':'hide'}}" wx:if="{{dateList29.length==0}}">
+  暂无日程
+</view>
+<view wx:else="{{dateList29.length!==0}}">
+  <block wx:for="{{dateList29}}" wx:key="{{index}}"> 
+      <view class="schedule-footer {{line4?'show':'hide'}}" style='background:#fff url(https://www.iv2018.cn/public/images/ieeeImages/schedule-icon/line.png);'>
+    
+    <!--scheduleList 循环-->
+    <view class='scheduleLi'   bindtap='toggleBtn'  id="{{dateList29[index].schedule_time_id}}">
+      <view class='time'>
+     {{dateList29[index].schedule_time_dan}}
+      </view>
+      <image src='./../../../images/schedule-icon/3-08.png' mode='widthFix' class='img' />
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+          {{dateList29[index].schedule_time_content}}
+        </view>
+      </view>
+          <!--scheduleList子菜单-->
+    <view class='scheduleLi {{uhide==dateList29[index].schedule_time_id?"":"bright789_view_hide"}}'>
+      <view class='time2'>
+      </view>
+      <image src='./../../../images/schedule-icon/point.png' mode='widthFix' class='img' /> 
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+           人物：{{dateList29[index].schedule_time_character}}
+        </view>
+      </view>
+    </view>
+    <!--scheduleList 子菜单-->
+    </view>
+    
+  </view>
+</block>
+</view>
+<!--星期六-->
+<!--星期日-->
+<view class="noschedul {{line5?'show':'hide'}}" wx:if="{{dateList30.length==0}}">
+  暂无日程
+</view>
+<view wx:else="{{dateList30.length!==0}}">
+   <block wx:for="{{dateList30}}" wx:key="{{index}}"> 
+      <view class="schedule-footer {{line5?'show':'hide'}}" style='background:#fff url(https://www.iv2018.cn/public/images/ieeeImages/schedule-icon/line.png);'>
+    
+    <!--scheduleList 循环-->
+    <view class='scheduleLi'   bindtap='toggleBtn'  id="{{dateList30[index].schedule_time_id}}">
+      <view class='time'>
+     {{dateList30[index].schedule_time_dan}}
+      </view>
+      <image src='./../../../images/schedule-icon/3-08.png' mode='widthFix' class='img' />
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+          {{dateList30[index].schedule_time_content}}
+        </view>
+      </view>
+          <!--scheduleList子菜单-->
+    <view class='scheduleLi {{uhide==dateList30[index].schedule_time_id?"":"bright789_view_hide"}}'>
+      <view class='time2'>
+
+      </view>
+      <image src='./../../../images/schedule-icon/point.png' mode='widthFix' class='img' /> 
+      <view class='schedcon' style='background:url(./../../../images/schedule-icon/tag.png) left  no-repeat;'>
+        <view class='mainCon'>
+           人物：{{dateList30[index].schedule_time_character}}
+        </view>
+      </view>
+    </view>
+    <!--scheduleList 子菜单-->
+    </view>
+    
+  </view>
+</block>
+</view>
+<!--星期日-->
+
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+.news{
+  padding: 30rpx;
+}
+.title{
+  font-size: 18px;
+  color:#333;
+  line-height: 20px;
+}
+.date{
+  margin-top:15rpx;
+  padding-bottom:10rpx;
+  font-size:10px;
+  color:#c4c4c4;
+  border-bottom: 1rpx solid #cfcfcf;
+}
+.imgView{
+  width: 600rpx;
+  margin:0px auto;
+  margin-top: 20rpx;
+}
+.img{
+  width: 100%;
+  margin:0px auto;
+  height: 356rpx;
+  border-radius: 10rpx;
+}
+.contain{
+  margin: 0px auto;
+  margin-top:10rpx;
+  font-size: 15px;
+  color: #888;
+  line-height: 25px;
+  padding: 10rpx;
+}

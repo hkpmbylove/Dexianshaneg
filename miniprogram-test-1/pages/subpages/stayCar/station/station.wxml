@@ -1,0 +1,90 @@
+<!--index.wxml-->
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../../images/index-icon/code.png" mode="widthFix" />    
+ </view>
+  
+<view class='subContainer'>
+<view class="introduction-forum">
+  <view style="background:url('https://www.iv2018.cn/public/images/ieeeImages/top.png') no-repeat;background-size:750rpx;padding-top:20rpx;">
+    <view class='car'><image src='./../../../../images/Stay/smain.png' style='width:100%;' mode='widthFix'></image></view>
+    <view class='cartitle'>
+      <image class='title left' src='./../../../../images/Stay/sleft.png' mode='widthFix'></image>
+      <view class='head'>接站安排</view>
+      <image class='title right' src='./../../../../images/Stay/sright.png' mode='widthFix'></image>
+    </view>
+    <view class='containmin'>
+      时间：6月26日 8：00 - 19：00
+    </view>
+    <view class='textnr'>
+      <text class='titlebox'>1.机场上车点 \n</text>
+      <view class='table'>
+      <view class='tr'>
+        <view class='th'>航站楼</view>
+        <view class='th'>上车地点</view>
+        <view class='th long' style='border-right: 1rpx solid rgb(46,174,219);'>行走路线</view>
+      </view>
+      <view class='tr'>
+        <view class='td'>1号航站楼</view>
+        <view class='td'>1号停车场</view>
+        <view class='td long'>出航站楼直行<text>——</text>即可抵达停车场</view>
+      </view>
+      <view class='tr'>
+        <view class='td'>2号航站楼</view>
+        <view class='td'>2号停车场</view>
+        <view class='td long'>出航站楼直行<text>——</text>即可抵达停车场</view>
+      </view>
+      <view class='tr'>
+        <view class='td'>3号航站楼</view>
+        <view class='td'>3号停车场</view>
+        <view class='td long'>出航站楼直行<text>——</text>即可抵达停车场</view>
+      </view>
+      <view class='tr'>
+        <view class='td'>4号航站楼</view>
+        <view class='td'>4号停车场</view>
+        <view class='td long'>出航站楼直行<text>——</text>即可抵达停车场</view>
+      </view>
+    </view><!--表格结束-->
+     <text class='titlebox'>2.火车站上车点 \n</text>
+     <text>会议接送车辆在会议期间会有“IEEE IV2018”的相关标识。参会人员请注意机场和地铁的引导指示牌，遵循现场志愿者引导。会议接站车辆遵循以下规则：（1）半小时一趟车；（2）一辆车载满N人即刻出发；（3）人员不满或发车间隔不足半个小时不发车。</text>
+    </view>
+
+    <view class='cartitle header'>
+     送站安排
+    </view>
+    <view class='containmin'>
+      时间：6月26日 8：00 - 19：00
+    </view>
+    <view class='containmins'>
+      上车地点：会议酒店
+    </view>
+    <view class='textnr'>
+    <text>会后安排送站车辆。需要送站人员请注意酒店的引导指示牌遵循现场志愿者引导。会议接站车辆遵循以下规则：（1）半小时一趟车；（2）一辆车载满N人即刻出发；（3）人员不满或发车间隔不足半个小时不发车。</text>
+    </view>
+
+    
+
+  </view><!--背景-->
+</view>
+</view>
+
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

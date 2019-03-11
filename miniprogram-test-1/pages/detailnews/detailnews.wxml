@@ -1,0 +1,3 @@
+<view class="news">
+  <web-view src="{{original}}"></web-view>
+</view>

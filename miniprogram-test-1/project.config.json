@@ -1,0 +1,92 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.1",
+	"appid": "wx5e7537035eaaf2ba",
+	"projectname": "0613",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": -1,
+					"name": "大会简介",
+					"pathName": "pages/Introduction/Introduction",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "大会日程",
+					"pathName": "pages/Schedule/Schedule",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "大会简介",
+					"pathName": "pages/time/time",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "合作单位",
+					"pathName": "pages/subpages/Cooperator/Cooperator",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "交通住宿",
+					"pathName": "pages/subpages/Stay/Stay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/home/home",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "大会商城",
+					"pathName": "pages/subpages/News/News",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/login/login",
+					"query": "scene=qaii",
+					"scene": 1011
+				}
+			]
+		}
+	}
+}

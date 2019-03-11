@@ -1,0 +1,95 @@
+/* pages/Introduction/Introduction.wxss */
+page{
+  background: #fff;
+}
+.title{
+  font-size: 12px;
+  color: #00a9a3;
+}
+.box1{
+  margin: 0px auto;
+  padding: 0rpx 30rpx;
+  padding-top: 30rpx;
+  color: #333;
+  font-size: 13px;
+}
+.box2{
+  margin: 0px auto;
+  padding: 0rpx 30rpx;
+  padding-top: 30rpx;
+  border-top: 10rpx solid #ebf0f3;
+  color: #333;
+  font-size: 13px;
+}
+.nobox{
+  text-align: center;
+  color: #ddd;
+  font-size: 15px;
+}
+.couponbox{
+  margin: 0px auto;
+  padding-top:100rpx; 
+  width: 200rpx; 
+}
+.sub{
+  font-size: 13px;
+}
+.coupon{
+  width: 200rpx;
+  height: 200rpx;
+}
+.radio-group{
+  display: inline-block;
+}
+.item{
+  vertical-align: middle;
+  border-bottom: 1rpx #f0f0f0 solid;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.label{
+  margin-right: 30rpx;
+  vertical-align: middle;
+}
+input{
+  width: 70%;
+  display:inline-block;
+  vertical-align: middle;
+}
+.place{
+  font-size: 11px;
+}
+.placeright{
+  font-size: 11px;
+  text-align: right;
+}
+.green1{
+  color:#69bab3;
+  vertical-align:middle;
+}
+.placecen{
+  font-size: 11px;
+  text-align: center;
+}
+.radio{
+  margin-right: 20rpx;
+}
+.submit{
+  margin: 0px auto;
+  margin-top: 60rpx;
+  background: #00a9a3;
+  width: 90%;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}
+.introduce{
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  float: right;
+  color: #aaa;
+  font-size: 10px;
+}

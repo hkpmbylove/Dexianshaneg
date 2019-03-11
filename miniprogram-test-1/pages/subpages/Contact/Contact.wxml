@@ -1,0 +1,76 @@
+<!--index.wxml-->
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />
+      
+ </view> 
+
+<view class='subContainer' style='padding-top:90rpx;'>
+  <view class='box'style="background:url(https://www.iv2018.cn/public/images/ieeeImages/top.png) no-repeat;background-size:750rpx;">
+    <view wx:for="{{wxctInfo}}" wx:key="index">
+      <view class='item'>
+        <view class='title greens'>
+          {{wxctInfo[index].ct_name}}
+        </view>
+        <image class='img1 left' src='{{wxctInfo[index].ct_AvatarUrl}}'></image>
+        <view class='detail'>
+            <view class='big'>
+              <text>{{wxctInfo[index].ct_CHjobname}} \n</text>
+              <text>{{wxctInfo[index].ct_UNjobname}} \n</text>
+            </view>
+            <text>手机：{{wxctInfo[index].ct_phoneNum}} \n</text>
+            <text>邮箱：{{wxctInfo[index].ct_email}} \n</text>
+            <text>微信：{{wxctInfo[index].ct_wxNum}} \n</text>
+        </view>
+        <image class='img2 right' src='{{wxctInfo[index].ct_QrcodeUrl}}'></image>
+      </view>
+    </view>
+    <!-- <view class='item'>
+      <view class='title greens'>
+        报名热线
+      </view>
+      <image class='img1 left' src='https://www.iv2018.cn/public/images/ieeeImages/contact/people.png' mode='widthFix'></image>
+      <image class='img2 right' src='https://www.iv2018.cn/public/images/ieeeImages/contact/code.png' mode='widthFix'></image>
+    </view>
+    <view class='item'>
+      <view class='title greens'>
+        报名热线
+      </view>
+      <image class='img1 left' src='https://www.iv2018.cn/public/images/ieeeImages/contact/people.png' mode='widthFix'></image>
+      <image class='img2 right' src='https://www.iv2018.cn/public/images/ieeeImages/contact/code.png' mode='widthFix'></image>
+    </view>
+    <view class='item'>
+      <view class='title greens'>
+        报名热线
+      </view>
+      <image class='img1 left' src='https://www.iv2018.cn/public/images/ieeeImages/contact/people.png' mode='widthFix'></image>
+      <image class='img2 right' src='https://www.iv2018.cn/public/images/ieeeImages/contact/code.png' mode='widthFix'></image>
+    </view> -->
+    
+  </view>
+  
+
+</view>
+
+<image class='bottombg' src='https://www.iv2018.cn/public/images/ieeeImages/bottom.png' mode='widthFix'></image>
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>
+

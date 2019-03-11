@@ -1,0 +1,19 @@
+
+.newsbar{
+  width: 50%;
+  border-right:1rpx #f0f0f0 solid;
+  text-align: center;
+  color: #888;
+  line-height: 100rpx; 
+  display: inline-block;
+  font-size: 14px;
+}
+.livebar{
+  width: 49.5%;
+  font-size: 14px;
+  text-align: center;
+  color: #69bab3;
+  line-height: 100rpx; 
+  display: inline-block;
+}
+

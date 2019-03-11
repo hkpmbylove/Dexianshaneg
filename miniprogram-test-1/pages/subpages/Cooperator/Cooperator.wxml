@@ -1,0 +1,38 @@
+<!--index.wxml-->
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />   
+ </view>
+
+<view class='subContainer'>
+<view class='imgBox' style='margin:0px;padding-top:100rpx;background:#fff;'>
+  <image src='https://www.iv2018.cn/public/images/cputilimage/hzdw.jpg' class='company' mode='widthFix'></image>
+</view>
+<!-- <view class='imgBox'>
+  <image src='https://www.iv2018.cn/public/images/ieeeImages/company/2.jpg' class='company' mode='widthFix'></image>
+</view>
+<view class='imgBox'>
+  <image src='https://www.iv2018.cn/public/images/ieeeImages/company/3.jpg' class='company' mode='widthFix'></image>
+</view> -->
+</view>
+
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

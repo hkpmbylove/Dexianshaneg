@@ -1,0 +1,11 @@
+/* pages/Schedule/Schedule.wxss */
+.bann{
+  width: 100%;
+}
+.box{
+  padding: 30rpx;
+  padding-top: 50rpx;
+  font-size: 12px;
+  text-align: center;
+  color: #888;
+}

@@ -1,0 +1,85 @@
+/* pages/Schedule/Schedule.wxss */
+
+.introduction-body{
+  margin-top: 8rpx;
+  padding-bottom: 30rpx;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1rpx #f0f0f0 solid;
+}
+.introduction-msg{
+  padding: 30rpx;
+  width: 93%;
+  height: auto;
+}
+.introduce{
+  color: #444;
+  font-size: 11px;
+  line-height: 16px;
+}
+.introduction-bodyTitle{
+  width: 340rpx;
+  height: 16rpx;
+  margin: 0 auto;
+  font-size: 39rpx;
+  line-height: 1;
+ 
+}
+.introduction-bodyTitle image{
+  width: 40rpx;
+  height: 25rpx;
+  margin: 0 2rpx;
+}
+.introduction-bodyContent{
+  font-size: 30rpx;
+}
+.guest{
+  text-align: center;
+}
+.guestli{
+  padding-top: 30rpx;
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+}
+.guestimg{
+  width: 131rpx;
+  height: 131rpx;
+  border-radius: 50%; 
+}
+.guestmune{
+  background: #fff;
+  border-top:1rpx solid #f0f0f0;
+  padding-bottom: 30rpx;
+  /* height: 165px; */
+  vertical-align: top;
+}
+.guestTitle{
+  font-size: 10px;
+  color: #888;
+  display: block;
+}
+.guestSubTitle{
+  font-size: 10px;
+  color: #aaa;
+  width: 100%; 
+  line-height: 12px;
+}
+.mainli{
+  background: #fff;
+}
+.sureimg{
+  margin-top: -60rpx;
+  margin-left: 90rpx;
+  width: 50rpx;
+  position: absolute; 
+}
+.guestsure{
+  width: 100%;
+}
+.guesting{
+  margin-top: -20rpx;
+  margin-left: 50rpx;
+  width: 65rpx;
+  position: absolute;
+}

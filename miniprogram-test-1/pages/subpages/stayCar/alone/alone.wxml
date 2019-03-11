@@ -1,0 +1,248 @@
+<!--index.wxml-->
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../../images/index-icon/code.png" mode="widthFix" />    
+ </view>
+  
+<view class='subContainer'>
+  <view class='header'>TRANSPORTATION</view>
+  <view class='box'>
+    <text>There are three airports near the Changshu International Hotel (see below), public coach services are provided between these three airports and the Changshu International Hotel. \n \n</text>
+    <text>Shanghai Hongqiao International Airport \n (上海虹桥国际机场) \n</text>
+    <text class='pink'>http://www.shanghaiairport.com/index_enhqjc.html \n \n</text>
+    <text>Shanghai Pudong International Airport \n (上海浦东国际机场) \n</text>
+    <text class='pink'>http://www.shanghaiairport.com/index_enpdjc.html \n \n</text>
+    <text>Wuxi Sunan Shuofang International Airport \n (无锡苏南硕放国际机场) \n</text>
+    <text class='pink'>http://www.wuxiairport.com/ \n \n</text>
+    <text class='h1'>Coaches schedule between Shanghai Airport and Changshu International Hotel \n</text>
+    <text> ◇ Hongqiao International Airport (上海虹桥国际机场) → Changshu North Station (常熟北站) </text>
+    <view class='table'>
+      <view class='tr'>
+        <view class='th'>Departure Time</view>
+        <view class='th'>Boarding Point</view>
+        <view class='th'>Travel Time</view>	
+      </view>
+      <view class='tr'>
+       <view class='td'>
+          <view class='tr1'>08:00	</view>	
+          <view class='tr1'>09:00	</view>	
+          <view class='tr1'>10:00	</view>	
+          <view class='tr1'>11:00	</view>	
+          <view class='tr1'>12:00	</view>	
+          <view class='tr1'>13:10	</view>	
+          <view class='tr1'>14:00	</view>	
+          <view class='tr1'>15:40	</view>	
+          <view class='tr1'>16:50	</view>	
+          <view class='tr1'>18:00	</view>	
+          <view class='tr1'>19:20	</view>	
+          <view class='tr1'>20:30	</view>	
+          <view class='tr1'>21:30	</view>	
+          <view class='tr1'>22:30	</view>	
+          <view class='tr1' style='border-bottom:none;'>23:30  </view>	
+
+        </view>
+        <view class='td2' style='padding:100px 75rpx;width:85rpx; height:114px;'>Parking Lot P5, Terminal 2 (T2航站楼P5停车场)</view>
+        <view class='td2' style='line-height:314px;height:314px;'>2 hours</view>
+      </view>
+    </view><!--table-->
+
+    <text> ◇ Changshu North Station (常熟北站) → Hongqiao International Airport (上海虹桥国际机场)</text>
+     <view class='table'>
+      <view class='tr'>
+        <view class='th'>Departure Time</view>
+        <view class='th'>Boarding Point</view>
+        <view class='th'>Travel Time</view>	
+      </view>
+      <view class='tr'>
+       <view class='td'>
+          <view class='tr1'>04:00	</view>	
+          <view class='tr1'>05:55	</view>	
+          <view class='tr1'>06:57	</view>	
+          <view class='tr1'>07:55	</view>	
+          <view class='tr1'>08:57	</view>	
+          <view class='tr1'>09:55	</view>	
+          <view class='tr1'>10:57	</view>	
+          <view class='tr1'>11:55	</view>	
+          <view class='tr1'>12:56	</view>	
+          <view class='tr1'>13:45	</view>	
+          <view class='tr1'>14:45	</view>	
+          <view class='tr1'>15:45	</view>	
+          <view class='tr1'>17:05	</view>	
+          <view class='tr1' style='border-bottom:none;'>18:05</view>	
+
+        </view>
+        <view class='td2' style='padding:89px 75rpx;width:85rpx; height:115px;'>Changshu North Station (常熟北站)</view>
+        <view class='td2' style='line-height:293px;height:293px;'>2 hours</view>
+      </view>
+    </view><!--table-->
+
+    <text> ◇ Pudong International Airport (上海浦东国际机场) → Changshu North Station (常熟北站)</text>
+        <view class='table'>
+      <view class='tr'>
+        <view class='th'>Departure Time</view>
+        <view class='th'>Boarding Point</view>
+        <view class='th'>Travel Time</view>	
+      </view>
+      <view class='tr'>
+       <view class='td'>
+          <view class='tr1'>06:30	</view>
+          <view class='tr1'>08:40	</view>
+          <view class='tr1'>09:50	</view>
+          <view class='tr1'>11:00	</view>
+          <view class='tr1'>12:30	</view>
+          <view class='tr1'>13:30	</view>
+          <view class='tr1'>15:00	</view>
+          <view class='tr1'>16:20	</view>
+          <view class='tr1'>17:40	</view>
+          <view class='tr1'>19:10	</view>
+          <view class='tr1'>20:40	</view>
+          <view class='tr1' style='border-bottom:none;'>22:30</view>
+
+        </view>
+        <view class='td2' style='padding:68px 75rpx;width:85rpx; height:115px;'>Parking Lot P2, Terminal 2 (T2航站楼P2停车场)</view>
+        <view class='td2' style='line-height:251px;height:251px;'>3 hours</view>
+      </view>
+    </view><!--table3-->
+    <text> ◇ Changshu North Station (常熟北站) → Pudong International Airport (上海浦东国际机场)</text>
+        <view class='table'>
+      <view class='tr'>
+        <view class='th'>Departure Time</view>
+        <view class='th'>Boarding Point</view>
+        <view class='th'>Travel Time</view>	
+      </view>
+      <view class='tr'>
+       <view class='td'>
+          <view class='tr1'>04:00	</view>
+          <view class='tr1'>05:45	</view>
+          <view class='tr1'>06:45	</view>
+          <view class='tr1'>07:57	</view>
+          <view class='tr1'>09:25	</view>
+          <view class='tr1'>10:40	</view>
+          <view class='tr1'>11:57	</view>
+          <view class='tr1'>13:40	</view>
+          <view class='tr1'>14:53	</view>
+          <view class='tr1'>16:13	</view>
+          <view class='tr1' style='border-bottom:none;'>17:55</view>
+
+        </view>
+        <view class='td2' style='padding:58px 75rpx;width:85rpx; height:114px;'>Changshu North Station (常熟北站)</view>
+        <view class='td2' style='line-height:230px;height:230px;'>3 hours</view>
+      </view>
+    </view><!--table4-->
+    <text class='h1'> Buses schedule between Wuxi Airport and Changshu International Hotel \n</text>
+    <text> ◇ Sunan Shuofang International Airport (苏南硕放国际机场) → Changshu South Station (常熟南站)</text>
+        <view class='table'>
+      <view class='tr'>
+        <view class='th'>Departure Time</view>
+        <view class='th'>Boarding Point</view>
+        <view class='th'>Travel Time</view>	
+      </view>
+      <view class='tr'>
+       <view class='td'>
+          <view class='tr1'><view class='trm'>08:30	</view>
+          <view class='trm'>09:00	</view></view>
+          <view class='tr1'><view class='trm'>09:20	</view>
+          <view class='trm'>09:40	</view></view>
+          <view class='tr1'><view class='trm'>10:00	</view>
+          <view class='trm'>10:20	</view></view>
+          <view class='tr1'><view class='trm'>10:40	</view>
+          <view class='trm'>11:00	</view></view>
+          <view class='tr1'><view class='trm'>11:20</view>	
+          <view class='trm'>11:40	</view></view>
+          <view class='tr1'><view class='trm'>12:00</view>	
+          <view class='trm'>12:20	</view></view>
+          <view class='tr1'><view class='trm'>12:40</view>	
+          <view class='trm'>13:00	</view></view>
+          <view class='tr1'><view class='trm'>13:20</view>	
+          <view class='trm'>13:40	</view></view>
+          <view class='tr1'><view class='trm'>14:00</view>
+          <view class='trm'>14:20	</view></view>
+          <view class='tr1'><view class='trm'>14:40</view>	
+          <view class='trm'>15:00	</view></view>
+          <view class='tr1'><view class='trm'>15:20</view>	
+          <view class='trm'> 15:40	</view></view>
+          <view class='tr1'><view class='trm'>16:00</view>	
+          <view class='trm'>16:20	</view></view>
+          <view class='tr1'><view class='trm'>16:40</view>	
+          <view class='trm'> 17:00	</view></view>
+          <view class='tr1'><view class='trm'>17:30</view>	
+          <view class='trm'> 17:55	</view></view>
+          <view class='tr1'><view class='trm'>18:20</view>	
+          <view class='trm'>18:45	</view></view>
+          <view class='tr1'><view class='trm'>19:20	</view>
+          <view class='trm'>19:50	</view></view>
+          <view class='tr1' style='border-bottom:none;'><view class='trm'>20:30	</view></view>		
+
+        </view>
+        <view class='td2' style='padding:120px 75rpx;width:85rpx; height:116px;'>Gate 7, 1st Floor, Terminal Building (候机楼一楼7号门)</view>
+        <view class='td2' style='line-height:356px;height:356px;'>1.5 hours</view>
+      </view>
+    </view><!--table5-->
+    <text> ◇ Changshu South Station (常熟南站) → Sunan Shuofang International Airport (苏南硕放国际机场)</text>
+        <view class='table'>
+      <view class='tr'>
+        <view class='th'>Departure Time</view>
+        <view class='th'>Boarding Point</view>
+        <view class='th'>Travel Time</view>	
+      </view>
+      <view class='tr'>
+       <view class='td'>
+          <view class='tr1'><view class='trm'>06:00	</view>
+          <view class='trm'>06:52	</view></view>
+          <view class='tr1'><view class='trm'>07:18	</view>
+          <view class='trm'>07:50	</view></view>
+          <view class='tr1'><view class='trm'>08:58	</view>
+          <view class='trm'>09:30	</view></view>
+          <view class='tr1'><view class='trm'>09:58	</view>
+          <view class='trm'>10:30	</view></view>
+          <view class='tr1'><view class='trm'>10:48	</view>
+          <view class='trm'>11:22	</view></view>
+          <view class='tr1'><view class='trm'>11:50	</view>
+          <view class='trm'>12:20	</view></view>
+          <view class='tr1'><view class='trm'>12:38	</view>
+          <view class='trm'>13:02</view></view>
+          <view class='tr1'><view class='trm'>13:18	</view>
+          <view class='trm'>13:42	</view></view>
+          <view class='tr1'><view class='trm'>14:00	</view>
+          <view class='trm'>14:22	</view></view>
+          <view class='tr1'><view class='trm'>14:42	</view>
+          <view class='trm'>15:02	</view></view>
+          <view class='tr1'><view class='trm'>15:22	</view>
+          <view class='trm'>15:42	</view></view>
+          <view class='tr1'><view class='trm'>16:00	</view>
+          <view class='trm'>16:22	</view></view>
+          <view class='tr1'><view class='trm'>16:52	</view>
+          <view class='trm'>17:22	</view></view>
+          <view class='tr1' style='border-bottom:none;'><view class='trm'>17:48	</view>
+          <view class='trm' >18:30 </view></view>
+
+        </view>
+        <view class='td2' style='padding:69px 75rpx;width:85rpx; height:155px;'>Changshu South Station (常熟南站)</view>
+        <view class='td2' style='line-height:293px;height:293px;'>1.5 hours</view>
+      </view>
+    </view><!--table6-->
+
+  </view> <!--box-->
+
+</view><!--内容-->
+
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

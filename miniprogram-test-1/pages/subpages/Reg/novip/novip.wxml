@@ -1,0 +1,33 @@
+<!--index.wxml-->
+ <view class='paiosele'>
+  <view class='contern'>
+    <text class='title'>workshop标准票(半天) </text>
+    <text class="price right">￥1500</text>
+    <view class='line'></view>
+    <text class='subcon'>
+      <text class='spanco'>票种说明：</text>
+      本票售卖时间为5月15日0:00-6月15日0:00，本学生票针对的是本科、硕士、博士在读，请确认您属于此类      别再行购买，本票使用时需出示学生证件，如无法出示，本票作废，费用不做退还。 
+      <text class='spanco'>费用包含：</text>
+      6月27日-29日主会议参会资格；会议资料；茶歇；午餐；欢迎晚宴与会议晚宴。
+    </text>
+  </view>  
+ </view>
+
+<form bindsubmit='formSubmit'>
+ <view class='form'>
+  <text class='label'>姓名<text class='red'>(必填)</text></text>
+  <input class='int' name="name"></input>
+  <text class='label'>手机<text class='red'>(必填)</text></text>
+  <input class='int' name="phone" type="number" maxlength="11" bindinput="inputPhoneNum" value='{{phone}}'></input>
+  <text class='label'>邮箱<text class='red'>(必填)</text></text>
+  <input class='int' name="email" bindchange="inputemail"></input>
+  <text class='label'>单位<text class='red'>(必填)</text></text>
+  <input class='int' name="util"></input>
+  <text class='label'>职务<text class='red'>(必填)</text></text>
+  <input class='int' name="job"></input>
+ </view>
+<!-- <navigator url='../sure/sure'> -->
+  <button class='submit' formType="submit" type="primary">提交</button>
+<!-- </navigator> -->
+</form>
+ 

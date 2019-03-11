@@ -1,0 +1,43 @@
+/* pages/Introduction/Introduction.wxss */
+page{
+  background: #fff;
+}
+.subContainer{
+  height: 100%;
+  padding: 0px;
+}
+.image{
+  margin: 0px auto;
+  margin-top:300rpx;
+  width: 250rpx;
+  height: 250rpx;
+  border: 2px solid #00a9a3;
+  border-radius: 50%;
+}
+.img{
+  width: 100%;
+}
+.imgper{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 50%;
+}
+.detail{
+  margin:0px auto; 
+  width: 90%;
+}
+
+.text{
+  margin: 20rpx 0rpx 30rpx 0rpx;
+  text-align: center;
+  color: #00a9a3;
+  font-size: 14px;
+}
+.title{
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.subTitle{
+  font-size: 24px;
+}

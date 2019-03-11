@@ -1,0 +1,66 @@
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />   
+ </view>
+
+<view class='subContainer'>
+<view class="introduction-forum">
+  <view style="background:url('https://www.iv2018.cn/public/images/ieeeImages/top.png') no-repeat;background-size:750rpx;">
+    <view class="introduction-content">
+        <view class='introduction-title introduction-line'>
+          <!-- {{IntroductionInfo[0].topic}} -->
+          第29届IEEE智能车IV大会
+        </view>
+        <view class='introduction-line'>
+        <image class='introduction-img' src='https://www.iv2018.cn/public/images/ieeeImages/introduction-icon/2-04.png' mode="widthFix"></image> 2018.06/26 08:00-2016.06/29 18:00<!--{{IntroductionInfo[0].time}}-->
+        </view>
+      <view class='introduction-line'><image class='introduction-img' src='./../../../images/introduction-icon/2-05.png' mode="widthFix"></image> 常熟虞山镇黄河路288号常熟国际饭店<!--{{IntroductionInfo[0].address}}--></view>
+        <view class='introduction-moey introduction-line'><image class='introduction-img' src='https://www.iv2018.cn/public/images/ieeeImages/introduction-icon/2-06.png' mode="widthFix"></image> 600<!--{{IntroductionInfo[0].money}}-->起</view>
+    </view>
+
+    <view class='box2 ticketno' wx:if="{{orderlist.length==0}}">
+      <view class='couponbox'>
+        <image src='./../../../images/me/ticket.png' class='coupon'></image>
+      </view>
+      <text>您暂未购买票券！ \n</text>
+      <text class="sub">请到参会注册界面进行购买。</text>
+    </view>
+    <view wx:else="{{orderlist.length!==0}}">
+      <view class='box2 line' wx:for="{{orderlist}}" wx:key="index">
+        
+        <view class='titname'> {{orderlist[index].order_tname}}</view>
+        <canvas  hidden="{{canvasHidden}}" style="width: 350rpx;height: 350rpx;"class='code2' canvas-id="{{orderlist[index].order_id}}"/>
+    
+        <text class='tex'>票券预订成功，此券作为入场凭证，\n 请妥善保管！\n</text>
+        <text class='tex'>券号：{{orderlist[index].order_Num}} \n</text>
+        <text class='tex datatime'>购买时间：{{orderlist[index].order_endtime}}</text>
+      </view>
+    </view>
+
+  </view><!--背景-->
+</view>
+</view>
+
+<image class='bottombg' src='https://www.iv2018.cn/public/images/ieeeImages/bottom.png' mode='widthFix'></image>
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/home.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admina.png' mode='widthFix'></image></view>
+    <view class='tabbartext greencol'>我的</view>
+  </view>
+</view>
+ 
+

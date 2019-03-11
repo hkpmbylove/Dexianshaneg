@@ -1,0 +1,10 @@
+<!--index.wxml-->
+ <view class="banner">
+  <image src='https://www.iv2018.cn/public/images/ieeeImages/ticket/banner.jpg' class='bann' mode='widthFix'></image>
+ </view>
+<view class='box'>
+  您的票据正在审核中，请耐心等待...
+</view>
+
+
+

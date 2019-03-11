@@ -1,0 +1,25 @@
+/* pages/Schedule/Schedule.wxss */
+.box{
+  background: #fff;
+  padding: 110rpx 30rpx 20rpx 30rpx;
+}
+.image{
+  width: 100%;
+}
+.title{
+  font-size: 18px;
+  color: #333;
+}
+.subtitle{
+  font-size: 12px;
+  color: #333;
+}
+.con{
+  font-size: 12px;
+  color: #888;
+}
+.subbox{
+  margin-top: 10rpx;
+  background: #fff;
+  padding:20rpx 30rpx;
+}

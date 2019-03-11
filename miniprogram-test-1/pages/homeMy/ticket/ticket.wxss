@@ -1,0 +1,142 @@
+/* pages/Introduction/Introduction.wxss */
+page{
+  background: #fff;
+}
+.introduction-forum{
+  padding-top: 90rpx;
+   width: 100%;
+}
+.introduction-content{
+  padding: 50rpx 50rpx 120rpx 50rpx;
+  height: 250rpx;
+  overflow: hidden;
+  font-size: 30rpx;
+  border-bottom: 10rpx #e9edf0 solid;
+}
+.introduction-title{
+  font-weight: bolder;
+  border-bottom: 1rpx solid #e9edf0;
+  line-height: 1.7;
+}
+.introduction-img{
+  width: 30rpx;
+  vertical-align: middle;
+}
+.introduction-line{
+  line-height: 70rpx;
+  border-bottom: 3rpx solid #e9edf0;
+}
+.introduction-moey{
+  color: #69bab3;
+}
+.introduction-body{
+  margin-top: 8rpx;
+  margin-bottom: 100rpx;
+  width: 100%;
+}
+.introduction-msg{
+  padding: 30rpx;
+  width: 93%;
+  height: auto;
+}
+.introduce{
+  color: #444;
+  font-size: 11px;
+  line-height: 16px;
+}
+.introduction-bodyTitle{
+  width: 271rpx;
+  height: 16rpx;
+  margin: 0 auto;
+  font-size: 39rpx;
+  line-height: 1;
+ 
+}
+.introduction-bodyTitle image{
+  width: 40rpx;
+  height: 25rpx;
+  margin: 0 2rpx;
+}
+.introduction-bodyContent{
+  font-size: 30rpx;
+}
+
+.introduction-footer{
+  width: 100%;
+  height: 85rpx;
+  overflow: hidden;
+  position: fixed;
+  border-top:1rpx #f0f0f0 solid;
+  bottom: 0;
+  left: 0;
+}
+.introduction-footerL{
+  width: 50%;
+  height: 85rpx;
+  float: left;
+   text-align: center;
+  line-height: 85rpx;
+  background: #ffffff;
+ 
+}
+.introduction-footerR{
+  width: 50%;
+  height: 85rpx;
+  float: left;
+  background: #6caaa7;
+  text-align: center;
+  line-height: 85rpx;
+  color: #ffffff;
+}
+.introduction-footerL image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 3rpx;
+}
+.code2{
+  margin: 0px auto;
+  background:#fff;
+}
+.tex{
+  color:#333;
+  font-size: 13px;
+  text-align: center;
+}
+.box2{
+  padding: 35rpx;
+  text-align: center;
+}
+.ticketno{
+  padding-top:60rpx; 
+  text-align: center;
+  color: #ddd;
+  font-size: 15px;
+}
+.line{
+  border-bottom:1rpx solid #f0f0f0;
+}
+
+.couponbox{
+  margin: 0px auto;
+  padding-top:60rpx; 
+  width: 200rpx; 
+}
+.sub{
+  font-size: 13px;
+}
+.coupon{
+  width: 200rpx;
+  height: 200rpx;
+}
+.titname{
+  margin-top: 10rpx;
+  text-align: center;
+  font-size: 15px;
+  line-height: 15px;
+  color:#00a29a;
+  width: 100%;
+}
+.datatime{
+  color: #888;
+  font-size: 10px;
+}

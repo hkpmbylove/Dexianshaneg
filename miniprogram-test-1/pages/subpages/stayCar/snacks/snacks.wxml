@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class='subContainer'>
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../../images/index-icon/code.png" mode="widthFix" />
+      
+ </view>
+
+  <view class='box'>
+     <view class='header'>Snacks</view>
+    
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/foodie1.jpg' class='image'></image></view>
+
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/foodie2.jpg' class='image'></image></view>
+
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/foodie3.jpg' class='image'></image></view>
+
+    <view class='header'>Scenic Spots</view>
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/tu1.jpg' class='image'></image></view>
+    <view class="say">◇ Shajiabang</view>
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/tu2.jpg' class='image'></image></view>
+    <view class="say">◇ Shang Lake</view>
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/tu3.jpg' class='image'></image></view>
+    <view class="say">◇ Yushan Park</view>
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/tu4.jpg' class='image'></image></view>
+    <view class="say">◇ Square Tower Park</view>
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/tu5.jpg' class='image'></image></view>
+    <view class="say">◇ Xingfu Temple</view>
+    <view class='imgbox'><image src='https://www.iv2018.cn/public/images/changshu/tu6.jpg' class='image'></image></view>
+    <view class="say">◇ Yan Garden</view>
+  </view>
+</view><!--subContainer-->
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

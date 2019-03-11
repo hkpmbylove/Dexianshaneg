@@ -1,0 +1,8 @@
+/* pages/Schedule/Schedule.wxss */
+.imgBox{
+  margin-top:10rpx;
+  width: 100%;
+}
+.company{
+  width: 100%;
+}

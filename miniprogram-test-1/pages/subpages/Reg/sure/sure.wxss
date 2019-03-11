@@ -1,0 +1,48 @@
+/* pages/Schedule/Schedule.wxss */
+.bann{
+  width: 100%;
+}
+.box{
+  padding: 30rpx;
+  background: #fff;
+  margin-bottom: 30rpx;
+  font-size: 14px;
+}
+.yellow{
+  color:#f39700;
+}
+.gray{
+  color: #ccc;
+}
+.green1{
+  color: #00a29a;
+}
+.one{
+  margin-right: 30rpx;
+}
+.con{
+  height: 300rpx;
+}
+.bottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0rpx;
+  height: 85rpx;
+  z-index: 1000;
+  background: #fff;
+}
+.total{
+  width: 60%;
+  text-align: center;
+  display: inline-block;
+  line-height: 85rpx;
+}
+.pay{
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  background: #00a29a;
+  color: #fff;
+  display: inline-block;
+  line-height: 85rpx;
+}

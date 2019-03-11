@@ -1,0 +1,30 @@
+<!--info.wxml-->
+<page>
+  <view class="bg">
+    <view class="imgBox">
+      <image src="../../images/login/logo.png" class="smsImage" mode="widthFix"></image> 
+    </view>
+  </view>
+  <view class="Scontainer">
+
+    <view class="sect">
+        <image src="../../images/login/admin.png" class="icon" mode="widthFix"></image>
+      <input placeholder="请输入手机号码" type="number" maxlength="11" bindinput="inputPhoneNum" auto-focus placeholder-class="phcolor"/>
+      <text  wx:if="{{send}}" class="sendMsg" bindtap="sendMsg">发送</text>
+    </view>
+
+    <view class="sect">
+        <image src="../../images/login/pass.png" class="icon" mode="widthFix"></image>
+      <input placeholder="短信验证码" type="number" bindinput="addCode" placeholder-class="phcolor"/>
+      <text wx:if="{{alreadySend}}" class="sendMsg" bindtap="sendMsg">{{second+"s"}}</text>
+    </view>
+
+    <button style='margin-top:100rpx;background-color:{{bgcolor}};' disabled="{{disabled}}" bindtap="onSubmit" class="submi">提交</button>
+    <view class='return' bindtap='back'>
+      <text>
+        返回登录
+      </text>
+    </view>
+
+  </view>
+</page>

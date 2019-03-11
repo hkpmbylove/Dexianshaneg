@@ -1,0 +1,54 @@
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />
+      
+ </view>
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
+  <block  wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="introduction-forum">
+  <view class="introduction-content">
+      <view class='introduction-title introduction-line'>
+         {{IntroductionInfo[0].topic}} 
+      </view>
+      <view class='introduction-line'>
+      <image class='introduction-img' src='./../../../images/introduction-icon/2-04.png' mode="widthFix"></image> {{IntroductionInfo[0].time}}
+      </view>
+     <view class='introduction-line'><image class='introduction-img' src='./../../../images/introduction-icon/2-05.png' mode="widthFix"></image> {{IntroductionInfo[0].address}}</view>
+      <view class='introduction-moey introduction-line'><image class='introduction-img' src='./../../../images/introduction-icon/2-06.png' mode="widthFix"></image> {{IntroductionInfo[0].money}}起</view>
+  </view>
+</view>
+<view class='introduction-body'>
+   <view class='introduction-msg'>
+      <view class='introduction-bodyTitle'>
+       <image src='./../../../images/introduction-icon/2-02.png' />
+       大会介绍
+       <image src='./../../../images/introduction-icon/2-03.png' />
+      </view>
+      <view class='introduction-bodyContent'>
+            <text class='introduce'>
+{{IntroductionInfo[0].Introduction}}
+            </text>
+      </view>
+   </view>
+</view>
+
+<!--添加页面跳转 2018/5/23-->
+<view class='introduction-footer'>   
+        
+     <button class='introduction-footerL' id="shareBtn" open-type="share"  hover-class="other-button-hover" style='border: none;'>
+      <image src='./../../../images/introduction-icon/2-07.png'></image>分享会议
+    </button>
+    <view class='introduction-footerR' bindtap='sign'>立即报名</view>
+    
+</view>

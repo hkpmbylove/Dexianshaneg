@@ -1,0 +1,43 @@
+
+  <view class="bg">
+    <view class="imgBox">
+      <image src="../../images/login/logo.png" class="smsImage" mode="widthFix"></image> 
+    </view>
+  </view>
+  <view class='conbox'>
+  <!--票券-->
+  <navigator url='../homeMy/ticket/ticket'>
+    <view class='useli'>
+      <image src='../../images/me/icon1.png' class="icons" style="height:35rpx;"></image>
+      <text class="title">我的票券</text>
+      <text class='right'> > </text>
+    </view>
+  </navigator>
+    <!--通知-->
+  <navigator url='../homeMy/inform/inform'>
+    <view class='useli'>
+      <image src='../../images/me/icon2.png' class="icons" style="height:43rpx;"></image>
+      <text class="title">我的通知</text>
+      <text class='right'> > </text>
+    </view>
+  </navigator>
+    <!--发票-->
+  <navigator url='../homeMy/invoice/invoice'>
+    <view class='useli'>
+      <image src='../../images/me/icon3.png' class="icons" style="height:32.7rpx;"></image>
+      <text class="title">我的发票</text>
+      <text class='right'> > </text>
+    </view>
+  </navigator>
+    <!--邀请函-->
+  <navigator url='../homeMy/invitation/invitation'>
+    <view class='useli'>
+      <image src='../../images/me/icon4.png' class="icons" style="height:50rpx;"></image>
+      <text class="title">我的邀请函</text>
+      <text class='right'> > </text>
+    </view>
+  </navigator>
+  </view>
+
+
+ 

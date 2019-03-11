@@ -1,0 +1,22 @@
+<!--index.wxml-->
+ <view class="banner">
+  <image src='https://www.iv2018.cn/public/images/ieeeImages/ticket/banner.jpg' class='bann' mode='widthFix'></image>
+ </view>
+<view class='box'>
+  <text>{{ticketTitle}}</text>
+  <text class='yellow right'>￥{{ticketPrice}}</text>
+  <text class='gray right one'>× 1</text>
+</view>
+<view class='box'>
+  <text>电话</text>
+  <text class='right'>{{wxphone}}</text>
+</view>
+<view class='box con'>
+<text class='green1'>退款说明：\n</text>
+<text>由于本活动各项资源需提前采购且坐席有限，一经售出概不接受退款。</text>
+</view>
+
+<view class='bottom'>
+  <view class='total yellow'>合计：￥{{ticketPrice}}</view>
+  <view class='pay' bindtap='pay'>确认支付</view>
+</view>

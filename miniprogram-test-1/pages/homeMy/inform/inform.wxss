@@ -1,0 +1,81 @@
+/* pages/Introduction/Introduction.wxss */
+page{
+  background: #fff;
+}
+.subContainer{
+  padding-top: 90rpx;
+}
+.item{
+  margin: 0px auto;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  padding: 15rpx;
+  width:75%;
+  border-radius: 10rpx;
+  background: #e9edf0;
+  font-size: 12px;
+}
+.itembox{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  padding: 15rpx;
+  text-align: center;
+  font-size: 15px;
+  color: #ddd;
+}
+.line{
+  margin: 0px auto;
+  height:1rpx;
+  width: 85%;
+  background: #e9edf0;
+}
+.h1{
+  font-size: 16px;
+  color: #333;
+  line-height: 25px;
+  font-weight: bold;
+}
+.h2{
+  color: #444;
+  line-height: 18px;
+  font-size: 12px;
+}
+
+.orgin{
+  color: #aaa;
+  line-height: 18px;
+}
+.item-left{
+  width: 75%;
+  display: inline-block;
+}
+.item-right{
+  width: 20%;
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+.data{
+  color: #aaa;
+  line-height: 15px;
+  font-size: 10px;
+  text-align: right;
+  
+}
+
+.infont{
+  width:100rpx;
+  height:100rpx;
+}
+.couponbox{
+  margin: 0px auto;
+  padding-top:60rpx; 
+  width: 200rpx; 
+}
+.sub{
+  font-size: 13px;
+}
+.coupon{
+  width: 200rpx;
+  height: 200rpx;
+}

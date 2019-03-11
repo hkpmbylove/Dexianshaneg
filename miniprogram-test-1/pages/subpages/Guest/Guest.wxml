@@ -1,0 +1,67 @@
+<!--index.wxml-->
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />
+      
+ </view>
+
+<view class='subContainer'>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
+  <block  wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='introduction-body'>
+   <view class='introduction-msg'>
+      <view class='introduction-bodyTitle'>
+       <image src='./../../../images/introduction-icon/2-02.png' />
+       IEEE IV 2018
+       <image src='./../../../images/introduction-icon/2-03.png' />
+      </view>
+   </view>
+   <view class='guest'>
+      部分参会嘉宾（陆续更新中）
+   </view>
+</view>
+
+<view class='guestmune'>
+    <view class='guestli guestmune' wx:for="{{guestInfo}}" wx:key="index">
+      <image  class="guestimg" src='{{guestInfo[index].guests_url}}' ></image>
+      <view class='sureimg' wx:if="{{guestInfo[index].guests_status==1}}">
+         <image  class="guestsure" src='./../../../images/guest/sure.png' mode='widthFix'></image>
+      </view>
+    <view wx:else class='sureimg'>
+          <image class="guestsure" src='./../../../images/guest/ing.png' mode='widthFix'></image>
+    </view>
+    
+      <view class='name'><text class='guestTitle'> {{guestInfo[index].guests_name}}</text></view>
+      <text class='guestSubTitle'>{{guestInfo[index].guests_job}}</text>
+    </view>
+ 
+</view>
+</view>
+
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

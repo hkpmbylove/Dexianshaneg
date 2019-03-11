@@ -1,0 +1,89 @@
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />   
+ </view>
+
+<view class='subContainer' style='padding-top:90rpx;'>
+  <view wx:if="{{prices==0}}" style="background-image:url('https://www.iv2018.cn/public/images/ieeeImages/top.png');background-repeat:no-repeat;background-size:750rpx;" class='nobox'>
+    <view class='couponbox'>
+      <image src='./../../../images/me/coupon.png' class='coupon'></image>
+    </view>
+    <text>您暂未购买票券！ \n</text>
+    <text class="sub">请到参会注册界面进行购买。</text>
+  </view>
+     <view wx:else="{{prices!==0}}" style="background-image:url('https://www.iv2018.cn/public/images/ieeeImages/top.png');background-repeat:no-repeat;background-size:750rpx;">
+    <form bindsubmit='formSubmit'>
+      <view class='box1'>
+        <text class='title'>发票详情：</text>
+        <view class='item'>
+          <text class='label'>抬头类型</text>
+          <radio-group class="radio-group" bindchange="radioChange">
+            <label wx:for="{{items}}">
+              <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+          </radio-group>
+        </view>
+        <view class='item'>
+          <text class='label'>发票抬头</text>
+          <input name="rise" class='inout1'placeholder="填写抬头" placeholder-class='place'></input>
+        </view>
+        <view class='item'>
+          <text class='label'>纳税人识别号</text>
+          <input name="id" class='recognition'placeholder="填写纳税人识别号" placeholder-class='place'></input>
+        </view>
+        <view class='item'>
+          <text class='label'>发票内容</text>
+          <input name="content" class='inout1'placeholder="票费" placeholder-class='place'></input>
+        </view>
+        <view class='item'>
+          <text class='label'>发票金额</text>
+          <text><text class='green1'>{{prices}} </text>元</text>
+        </view>
+        <view class='item'>
+          <text class='label'>更多信息</text>
+          <input name="remarks" class='inout1'placeholder="填写购买方、备注、收款人等" placeholder-class='placeright'></input>
+        </view>
+      </view>
+      <view class='box2'>
+        <text class='title'>发票详情：</text>
+        <view class='item'>
+          <text class='label'>收件人</text>
+          <input name="detail" class='inout1'placeholder="填写收件人" placeholder-class='placecen'></input>
+        </view>
+        <view class='item'>
+          <text class='label'>联系电话</text>
+          <input name="phone" class='inout1'placeholder="1234567890" placeholder-class='placecen'></input>
+        </view>
+        <view class='item'>
+          <text class='label'>详细地址</text>
+          <input name="address" class='inout1'placeholder="填写详细地址" placeholder-class='placecen'></input>
+        </view>
+      </view>
+      <view class='introduce' bindtap='showadd'>开票说明</view>
+      
+    <button formType="submit" type="primary" class='submit'>提交</button>
+    </form>
+    </view> <!--背景-->  
+  
+</view>
+
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/home.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admina.png' mode='widthFix'></image></view>
+    <view class='tabbartext greencol'>我的</view>
+  </view>
+</view>

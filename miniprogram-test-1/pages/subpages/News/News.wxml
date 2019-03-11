@@ -1,0 +1,34 @@
+<!--pages/news/news.wxml-->
+<view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />     
+ </view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
+  <block  wx:for="{{imgUrlss}}" wx:key="{{index}}">
+    <swiper-item style="position:relative !important;">
+      <image src="{{item.carousel_url}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='produce'>
+  <view class='item' wx:for="{{produceInfo}}" wx:key="index">
+      <view class='producebox'>
+        <image src='{{produceInfo[index].product_thumimg_url}}' class='goods' id='{{index}}' bindtap='detail'></image>
+        <text>{{produceInfo[index].product_name}} \n</text>
+        <text class="intro">{{produceInfo[index].product_Instructions}}</text>
+        <view class='gobuy'>
+          <view class='left price'>￥{{produceInfo[index].product_price}}</view>
+          <button class='right buy' bindtap='toast' data-index="{{index}}">购买</button>
+        </view>
+     </view> 
+
+  </view>
+
+</view>
+

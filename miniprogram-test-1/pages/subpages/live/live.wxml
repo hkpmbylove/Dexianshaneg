@@ -1,0 +1,27 @@
+<!--pages/news/news.wxml-->
+<view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />     
+ </view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
+  <block>
+    <swiper-item>
+      <image src="{{imgUrlss}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view class='title'>
+
+</view>
+
+<view class='tarbar'>
+  <view class='newsbar' bindtap='toast'>新闻</view>
+  <view class='livebar greencol'>直播</view>
+</view>

@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class='subContainer'>
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../../images/index-icon/code.png" mode="widthFix" />
+      
+ </view>
+
+  <view class='box'>
+     <view class='header'>Local Information</view>
+     <text> <text class='colgreen'>◇</text> The City of Changshu is located in the development area of Yangtze Triangle, covering an area of 1, 264 square kilometers with a population of 1.04 million, and neighboring Shanghai on the east, Wuxi on the west, Suzhou on the south and Nantong on the north across the Yangtze. \n
+    </text>
+    <text><text class='colgreen'>◇</text> Changshu is a booming port city and also well-known for its trade, industry and tourism. Changshu is awarded as the national-level historic and cultural city. \n \n</text>
+    <text><text class='colgreen'>◇</text> Born into its civilized culture, a good many famous people in history came from Changshu. \n \n </text>
+    <text><text class='colgreen'>◇</text>  In ancient times, Yanzi, the only disciple of Confucius in the south of the country, was known as the pioneer to promote education in the south. In Qing Dynasty, Wentonghe--Number One Scholar and Prime Minister--served as the teacher for both Emperor Tongzhi and Emperor Guangxu. \n \n </text>
+    <text><text class='colgreen'>◇</text> Changshu is also known as ‘the National-level Best Tourist City’ and the National-level Garden City because of its beautiful hills, clear waters and classical gardens.  \n \n </text>
+    <text><text class='colgreen'>◇</text> The hills, the vast body of water, the city and the parks combine into a harmony and form a very special wonder. In addition, the city of Changshu is featured for ‘Seven rivers making their way into the sea and ten mile verdant hills running half way into the city’. \n \n </text>
+    <text><text class='colgreen'>◇</text> Shajiabang Reed Pond, located in the southeast of Changshu, enjoys its name both at home and abroad and now has become a new and favorite tourist attraction. \n \n </text>
+    <text><text class='colgreen'>◇</text> As for economic development and urban architectures, Changshu is listed on top among the county-level cities of the country. \n \n</text>
+    <text><text class='colgreen'>◇</text> Besides, Changshu enjoys a booming and prosperous market, stable society, high technology and developed economy, and is making its firm steps towards modernization. \n \n</text>
+    <text><text class='colgreen'>◇</text> Being open to the world in all aspects now, Changshu will have a more prosperous, more beautiful and brighter future. </text>
+  </view>
+</view><!--subContainer-->
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

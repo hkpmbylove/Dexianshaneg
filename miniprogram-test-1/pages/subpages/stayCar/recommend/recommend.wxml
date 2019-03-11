@@ -1,0 +1,293 @@
+<!--index.wxml-->
+<view class='subContainer' style='height:100%;'>
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../../images/index-icon/code.png" mode="widthFix" />
+      
+ </view>
+  
+  
+    <image src='https://www.iv2018.cn/public/images/staticimage/20180601174105.jpg' class='hotel'></image>
+  <view class='header'>HOTEL ACCOMMODATION AND RESERVATION</view>
+  <view class='contarn'>
+    <view class='box'>
+      <text class='h1'>Changshu International Hotel (Conference Venue) \n</text>
+      <text>Website: <text class='pink'>http://www.csi-hotel.com/</text> \n</text>
+      <text>Address：No.288 Yellow River Road, Changshu.</text>
+      <view class='table'>
+        <view class='tr'>
+          <view class='th'>Room Type</view>
+          <view class='th'>Rate(RMB)</view>
+          <view class='th'>Breakfast</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Standard Room</view>
+          <view class='td'>298</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>		
+          <view class='td' style='height:40px;'>Standard Twin \n Room</view>
+          <view class='td tdhei'>298</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Comfort King \n Room</view>
+          <view class='td tdhei'>358</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Deluxe King Room (Mountain View)</view>
+          <view class='td tdhei'>398</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Executive Twin \n Room</view>
+          <view class='td tdhei'>378</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Business King \n Room</view>
+          <view class='td tdhei'>518</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Business Twin \n Room</view>
+          <view class='td tdhei'>518</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Deluxe Suite</view>
+          <view class='td'>638</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Business Suite</view>
+          <view class='td'>738</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Comfort Twin \n Room</view>
+          <view class='td tdhei'>358</view>
+          <view class='td tdhei'>included</view>
+        </view>
+      
+      </view>
+      <text>Participants can make reservations as follows: \n</text>
+       <text>Phone & E-mail Reservation:\n</text>
+       <text> ◇	Reservation Department at 86-512-52100558, or by 2473075846@qq.com.\n</text>
+        <text>◇	Ask for the rate by conference name: <text class='pink'>"IV 2018".\n  </text>  </text>
+    </view>
+    
+  </view><!--内容-->
+
+    
+
+    <view class='contarn'>
+    <view class='box'>
+      <text class='h1'>Merryland Trades Hotel \n</text>
+      <text>Website: <text class='pink'>http://www.csyukunhotel.com/</text> \n</text>
+      <text>Address：No. 176 Zhujiang Road, Changshu. \n</text>
+      <text>Distance to the Venue: 5 Mins by BUS/CAR.</text>
+      <view class='table'>
+        <view class='tr'>
+          <view class='th'>Room Type</view>
+          <view class='th'>Rate(RMB)</view>
+          <view class='th'>Breakfast</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Superior Room</view>
+          <view class='td'>392</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>		
+          <view class='td'>Exquisite Room</view>
+          <view class='td'>428</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Room</view>
+          <view class='td'>458</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Deluxe Room</view>
+          <view class='td'>472</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Executive Room</view>
+          <view class='td'>702</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Suite</view>
+          <view class='td'>932</view>
+          <view class='td'>included</view>
+        </view>
+      
+      </view>
+      <text>Participants can make reservations as follows: \n</text>
+       <text>Phone & E-mail Reservation:\n</text>
+       <text> ◇		Ms. Li, Reservation Chief at 86-13390825715, or by sunnyli@merryland-yk.com.</text>
+        <text>◇	Ask for the rate by conference name: <text class='pink'>"IV 2018".\n  </text>  </text>
+    </view>
+    
+  </view><!--内容3-->
+
+    <view class='contarn'>
+    <view class='box'>
+      <text class='h1'>Yushan Jinjiang Hotel \n</text>
+      <text>Website: <text class='pink'>http://www.csyushanjjhotel.com/</text> \n</text>
+      <text>Address：No.8 North Gate Street, Changshu. \n</text>
+      <text>Distance to the Venue: 10 Mins by BUS/CAR.</text>
+      <view class='table'>
+        <view class='tr'>
+          <view class='th'>Room Type</view>
+          <view class='th'>Rate(RMB)</view>
+          <view class='th'>Breakfast</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Standard King \n Room</view>
+          <view class='td tdhei'>350</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>		
+          <view class='td' style='height:40px;'>Standard Twin \n Room</view>
+          <view class='td tdhei'>350</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Deluxe King \n Room</view>
+          <view class='td tdhei'>450</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Deluxe Twin \n Room</view>
+          <view class='td tdhei'>450</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Executive King \n Room</view>
+          <view class='td tdhei'>500</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Executive Twin \n Room</view>
+          <view class='td tdhei'>500</view>
+          <view class='td tdhei'>included</view>
+        </view>      
+      </view>
+      <text>Participants can make reservations as follows: \n</text>
+       <text>Phone Reservation: \n</text>
+       <text> ◇	Ms. ZHANG, Reservation Chief at 86-13862303841.</text>
+       
+    </view>
+    
+  </view><!--内容4-->
+
+      <view class='contarn'>
+    <view class='box'>
+      <text class='h1'>Crowne Plaza \n</text>
+      <text>Website: <text class='pink'>http://www.cszjgchotel.com/</text> \n</text>
+      <text>Address：No.6 Kaiyuan Street, Changshu. \n</text>
+      <text>Distance to the Venue: 20 Mins by BUS/CAR.</text>
+      <view class='table'>
+        <view class='tr'>
+          <view class='th'>Room Type</view>
+          <view class='th'>Rate(RMB)</view>
+          <view class='th'>Breakfast</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Deluxe King \n Room</view>
+          <view class='td tdhei'>525</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>		
+          <view class='td' style='height:40px;'>Deluxe Twin \n Room</view>
+          <view class='td tdhei'>525</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Executive King \n Room</view>
+          <view class='td tdhei'>625</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Executive Twin \n Room</view>
+          <view class='td tdhei'>625</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Suite</view>
+          <view class='td'>880</view>
+          <view class='td'>included</view>
+        </view>
+      </view>
+      <text>Participants can make reservations as follows: \n</text>
+       <text>Phone Reservation: \n</text>
+       <text> ◇	Ms. Xu, Reservation Chief at 86-18915668787, or by rsvn@cpchangshu.com, cc to coco.xu@cpchangshu.com.</text>
+       
+    </view>
+    
+  </view><!--内容5-->
+
+  <view class='contarn' style='padding-bottom:115rpx;'>
+    <view class='box'>
+      <text class='h1'>Changshu Senlin Hotel \n</text>
+      <text>Website: <text class='pink'> http://www.changshu-senlin-hotel.008h.com/</text> \n</text>
+      <text>Address：Distance to the Venue: 5 Mins Walk.</text>
+      <view class='table'>
+        <view class='tr'>
+          <view class='th'>Room Type</view>
+          <view class='th'>Rate(RMB)</view>
+          <view class='th'>Breakfast</view>
+        </view>
+        <view class='tr'>
+          <view class='td'>Standard Room</view>
+          <view class='td'>280</view>
+          <view class='td'>included</view>
+        </view>
+        <view class='tr'>		
+          <view class='td' style='height:40px;'>Deluxe Twin \n Room</view>
+          <view class='td tdhei'>320</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Standard King \n Room</view>
+          <view class='td tdhei'>320</view>
+          <view class='td tdhei'>included</view>
+        </view>
+        <view class='tr'>
+          <view class='td' style='height:40px;'>Deluxe King \n Room</view>
+          <view class='td tdhei'>380</view>
+          <view class='td tdhei'>included</view>
+        </view>
+      </view>
+      <text>Participants can make reservations as follows: \n</text>
+       <text>Phone & E-mail Reservation:\n</text>
+       <text> ◇	Reservation Department at 8610-52102000.</text>
+    </view>
+    
+  </view><!--内容5-->
+
+</view>
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>

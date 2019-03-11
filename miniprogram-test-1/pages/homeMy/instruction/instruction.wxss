@@ -1,0 +1,18 @@
+/* pages/Introduction/Introduction.wxss */
+page{
+  background: #fff;
+}
+.subContainer{
+  font-size: 15px;
+  line-height: 20px;
+  color: #888;
+}
+.info{
+  padding: 80rpx;
+  padding-top: 30rpx;
+}
+.h1{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 50rpx;
+}

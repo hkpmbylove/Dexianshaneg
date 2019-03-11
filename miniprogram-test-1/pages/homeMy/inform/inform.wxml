@@ -1,0 +1,53 @@
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />   
+ </view>
+
+<view class='subContainer'>
+  <view style="background-image:url('https://www.iv2018.cn/public/images/ieeeImages/top.png');background-repeat:no-repeat;background-size:750rpx;padding-top:60rpx;">
+  <!-- 每一个item为一条通知 -->
+    <view class="itembox" wx:if="{{orderlist.length==0}}">
+      <view class='couponbox'>
+        <image src='./../../../images/me/ticket.png' class='coupon'></image>
+      </view>
+      <text>您暂未购买票券！ \n</text>
+    </view>
+    <view wx:else="{{orderlist.length!==0}}">
+      <view class='item'  wx:for="{{orderlist}}" wx:key="index">
+        <view class='item-left'>
+          <text class='h1'>您的票券预定成功！\n</text>
+          <text class='h2'>订单编号：{{orderlist[index].order_Num}}。存放于个人-我的票券快速入园，无需换票，入园请持商家电子码。\n</text>
+          <text class='orgin'>来自IEEE IV 2018</text>
+        </view>
+        <view class='item-right'>
+          <text class='data'>{{orderlist[index].order_endtime}}</text>
+          <image src='https://www.iv2018.cn/public/images/ieeeImages/ticket/iee.jpg' class='infont'></image>
+        </view>
+      </view>
+    </view>
+     <!-- 每一个item为一条通知 -->
+
+  </view><!--背景-->
+</view>
+
+<image class='bottombg' src='https://www.iv2018.cn/public/images/ieeeImages/bottom.png' mode='widthFix'></image>
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/home.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admina.png' mode='widthFix'></image></view>
+    <view class='tabbartext greencol'>我的</view>
+  </view>
+</view>

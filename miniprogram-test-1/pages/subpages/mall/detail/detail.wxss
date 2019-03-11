@@ -1,0 +1,57 @@
+swiper{
+  padding: 0px;
+  height: 750rpx;
+}
+.produce{
+  padding: 15rpx 30rpx;
+  background: #fff;
+  color: #888;
+  font-size: 12px;
+  border-top:1rpx solid #f7f7f7;
+}
+.title{
+  color: #444;
+  font-size: 15px;
+}
+.head{
+  width: 70%;
+  display: inline-block;
+}
+.price{
+  width: 25%;
+  display: inline-block;
+  color: #f39700;
+  font-size: 26px;
+  text-align: right;
+}
+.detail{
+  margin-top:5rpx;
+  margin-bottom:1rpx;
+  line-height: 40px;
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  background: #fff;
+}
+image.img{
+  width: 100%;
+}
+.probox{
+  padding-bottom:90rpx; 
+  background: #fff;
+  padding: 30rpx;
+  color: #888;
+  font-size: 14px;
+}
+.buybtn{
+  width: 200rpx;
+  height: 80rpx;
+  position: fixed;
+  bottom: 10rpx;
+  right:30rpx;
+  background:#00a29a;
+  color:#fff;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+}

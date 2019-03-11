@@ -1,0 +1,28 @@
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
+  <block>
+    <swiper-item>
+      <image src="{{proImage}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='produce'>
+  <view class='left head'>
+    <text class='title'>{{proName}} \n</text>
+    <text>{{proInstructions}}</text>
+  </view>
+  <text class='right price'>￥{{proPrice}}</text>
+</view>
+<view class='detail'>
+  图文详情
+</view>
+<view class='probox'>
+  {{proDetails}}
+</view>
+
+<view class='buybtn' bindtap='buybutton'>
+  购买
+</view>
+

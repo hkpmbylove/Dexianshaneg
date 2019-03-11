@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/home/home",
+    "pages/news/news",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/detailnews/detailnews",
+    "pages/sms/sms",
+    "pages/subpages/Introduction/Introduction",
+    "pages/subpages/Schedule/Schedule",
+    "pages/subpages/Stay/Stay",
+    "pages/subpages/Contact/Contact",
+    "pages/subpages/Cooperator/Cooperator",
+    "pages/subpages/Guest/Guest",
+    "pages/subpages/News/News",
+    "pages/subpages/live/live",
+    "pages/subpages/mall/buy/buy",
+    "pages/subpages/mall/detail/detail",
+    "pages/subpages/Registor/Registor",
+    "pages/subpages/Reg/student/student",
+    "pages/subpages/Reg/vip/vip",
+    "pages/subpages/Reg/check/check",
+    "pages/subpages/Reg/novip/novip",
+    "pages/subpages/Reg/media/media",
+    "pages/subpages/Reg/sure/sure",
+    "pages/subpages/stayCar/meeting/meeting",
+    "pages/subpages/stayCar/station/station",
+    "pages/subpages/stayCar/alone/alone",
+    "pages/subpages/stayCar/accommodation/accommodation",
+    "pages/subpages/stayCar/recommend/recommend",
+    "pages/subpages/stayCar/snacks/snacks",
+    "pages/homeMy/ticket/ticket",
+    "pages/homeMy/inform/inform",
+    "pages/homeMy/invitation/invitation",
+    "pages/homeMy/invoice/invoice",
+    "pages/homeMy/instruction/instruction"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0ba29b",
+    "navigationBarTitleText": "IEEE IV 2018",
+    "navigationBarTextStyle": "white"
+  }
+}

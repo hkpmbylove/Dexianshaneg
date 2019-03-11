@@ -1,0 +1,13 @@
+<view class='subContainer' style="background-image:url('https://www.iv2018.cn/public/images/ieeeImages/me/bg.jpg');background-repeat:no-repeat;background-size:750rpx;padding-top:60rpx;">
+  <view class='image'>
+    <image class='imgper' src='{{userInfo.avatarUrl}}' mode='widthFix'></image>
+  </view>
+  <view class='text'>
+    <text class='title'>诚邀<text class='subTitle'> {{metingInfo[0].Invited_name}} </text>嘉宾\n</text>
+    <text>{{metingInfo[0].Invited_job1}}\n{{metingInfo[0].Invited_job2}}</text>
+  </view>
+  <view class='detail'>
+    <image class='img'  src='https://www.iv2018.cn/public/images/ieeeImages/me/inf05.png' mode='widthFix'></image>
+  </view>
+
+</view>

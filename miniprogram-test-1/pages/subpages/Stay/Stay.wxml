@@ -1,0 +1,107 @@
+<!--index.wxml-->
+ <view class="item-header">
+    <view class='left green'>青岛 <text class='point'>∨</text></view>
+    <view class="item-search">
+      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
+       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
+    </view>
+    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />
+      
+ </view>
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
+  <block  wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='subContainer'>
+ <view class="pro-Recommend">
+    <view class='pro-RecommendTitle'>
+      <text  class='pro-RecommendTxt'>本地信息</text>
+    </view>   
+</view>
+
+<view class='stayBox'>
+  <view class='line'><!--line-->
+    <view class='imgli left'>
+      <view class='imglidel left'>
+        <navigator url="../stayCar/meeting/meeting">
+          <image src='https://www.iv2018.cn/public/images/ieeeImages/Stay/11.png' style="height:152rpx;"></image>
+        </navigator>
+      </view>
+      <view class='imglidel right'>
+        <navigator url="../stayCar/alone/alone">
+          <image src='https://www.iv2018.cn/public/images/ieeeImages/Stay/20.jpg' style="height:152rpx;"></image>
+        </navigator>
+      </view>
+      <view>
+        <image class='sha' src='https://www.iv2018.cn/public/images/ieeeImages/Stay/13.png' style="height:152rpx;"></image>
+      </view>
+    </view>
+    <view class='imgli right'>
+      <!-- <navigator url="../stayCar/snacks/snacks"> -->
+        <image src='https://www.iv2018.cn/public/images/ieeeImages/Stay/2.png'  style="height:314rpx;"></image>
+      <!-- </navigator> -->
+    </view>
+  </view><!--line-->
+  <view class='line'><!--line-->
+    <view class='imgli left'>
+      <navigator url="../stayCar/snacks/snacks">
+        <image src='https://www.iv2018.cn/public/images/ieeeImages/Stay/3.png'  style="height:314rpx;"></image>
+      </navigator>
+    </view>
+    <view class='imgli right'>
+      <view>
+        <navigator url="../stayCar/recommend/recommend">
+          <image class='sha' src='https://www.iv2018.cn/public/images/ieeeImages/Stay/42.jpg' style="margin-bottom:10rpx;height:152rpx;"></image>
+        </navigator>
+      </view>
+      <view>
+        <navigator url="../stayCar/accommodation/accommodation">
+          <image class='sha' src='https://www.iv2018.cn/public/images/ieeeImages/Stay/41.jpg' style="height:152rpx;"></image>
+        </navigator>
+      </view>
+      
+      <!-- <view class='imglidel left'>
+        <navigator url="../stayCar/alone/alone">
+          <image src='https://www.iv2018.cn/public/images/ieeeImages/Stay/41.png'  style="height:155rpx;"></image>
+        </navigator>
+      </view> -->
+      <!-- <view class='imglidel right'>
+        <navigator url="../stayCar/accommodation/accommodation">
+          <image src='https://www.iv2018.cn/public/images/ieeeImages/Stay/42.png'  style="height:155rpx;"></image>
+        </navigator>
+      </view> -->
+      <!-- <view class='imglidel left'>
+        <navigator url="../stayCar/recommend/recommend">
+          <image src='https://www.iv2018.cn/public/images/ieeeImages/Stay/43.png'  style="height:155rpx;"></image>
+        </navigator>
+      </view> -->
+      <!-- <view class='imglidel right'>
+        <image src='https://www.iv2018.cn/public/images/ieeeImages/Stay/44.png' style="height:155rpx;"></image>
+      </view> -->
+    </view>
+  </view><!--line-->
+</view>
+</view>
+
+<view class='tarbar'>
+  <view class='tarbarlist'>
+    <view>
+        <image class='tabbarimg' src='./../../../images/tabbar/homea.png' mode='widthFix' bindtap='home'></image>
+    </view>
+    <view class='tabbartext greencol'>首页</view>
+  </view>
+  <view class='tarbarlist' bindtap='news'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/news.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>新闻</view>
+  </view>
+  <view class='tarbarlist' bindtap='admin'>
+    <view><image class='tabbarimg' src='./../../../images/tabbar/admin.png' mode='widthFix'></image></view>
+    <view class='tabbartext'>我的</view>
+  </view>
+</view>
