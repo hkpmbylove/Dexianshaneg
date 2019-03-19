@@ -104,8 +104,8 @@ Page({
                   }
                 })
               } else if(res.data.msg=="LOGINSUCCESS"){
-                wx.switchTab({
-                  url: '/pages/index/index',
+                wx.redirectTo({
+                  url: '/pages/subpages/News/News',
                   success:function(){
                     // wx.showLoading({
                     //   title: '登陆成功',
@@ -120,8 +120,8 @@ Page({
                   }
                 })
               } else if (res.data.msg == "REGISTEREDSUCCESS"){
-                wx.switchTab({
-                  url: '/pages/index/index',
+                wx.redirectTo({
+                  url: '/pages/subpages/News/News',
                   success: function () {
                     wx.showLoading({
                       title: '注册登陆成功',
