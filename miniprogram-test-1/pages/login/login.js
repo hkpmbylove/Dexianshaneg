@@ -105,7 +105,7 @@ Page({
                 })
               } else if(res.data.msg=="LOGINSUCCESS"){
                 wx.redirectTo({
-                  url: 'pages/index/index',
+                  url: '/pages/subpages/News/News',
                   success:function(){
                     // wx.showLoading({
                     //   title: '登陆成功',
@@ -121,7 +121,7 @@ Page({
                 })
               } else if (res.data.msg == "REGISTEREDSUCCESS"){
                 wx.redirectTo({
-                  url: '/pages/index/index',
+                  url: '/pages/subpages/News/News',
                   success: function () {
                     wx.showLoading({
                       title: '注册登陆成功',
