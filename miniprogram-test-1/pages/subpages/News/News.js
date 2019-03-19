@@ -35,24 +35,33 @@ Page({
     wx.stopPullDownRefresh();
   },  
   toast: function (e) {
-    var uId = e.currentTarget.dataset.index;
-    var ProList = this.data.produceInfo;
-    var name = ProList[uId].product_name;
-    var price = ProList[uId].product_price;
-    var Instructions = ProList[uId].product_Instructions;
-    var details = ProList[uId].product_details;
-    var image = ProList[uId].product_img_url;
-    var thumimage = ProList[uId].product_thumimg_url;
-
-    wx.setStorageSync('name', name);
-    wx.setStorageSync('price', price);
-    wx.setStorageSync('Instructions', Instructions);
-    wx.setStorageSync('details', details);
-    wx.setStorageSync('image', image);
-    wx.setStorageSync('thumimage', thumimage);
-    wx.navigateTo({
-      url: '../mall/buy/buy',
+    wx.showToast({
+      title: '成功加入购物车',
+      icon: 'succes',
+      duration: 10000
     })
+
+    setTimeout(function () {
+      wx.hideToast()
+    }, 1000)
+    // var uId = e.currentTarget.dataset.index;
+    // var ProList = this.data.produceInfo;
+    // var name = ProList[uId].product_name;
+    // var price = ProList[uId].product_price;
+    // var Instructions = ProList[uId].product_Instructions;
+    // var details = ProList[uId].product_details;
+    // var image = ProList[uId].product_img_url;
+    // var thumimage = ProList[uId].product_thumimg_url;
+
+    // wx.setStorageSync('name', name);
+    // wx.setStorageSync('price', price);
+    // wx.setStorageSync('Instructions', Instructions);
+    // wx.setStorageSync('details', details);
+    // wx.setStorageSync('image', image);
+    // wx.setStorageSync('thumimage', thumimage);
+    // wx.navigateTo({
+    //   url: '../mall/buy/buy',
+    // })
   },
   
   //点击事件动态传参产看产品详情

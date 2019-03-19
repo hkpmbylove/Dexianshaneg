@@ -23,6 +23,6 @@
 </view>
 
 <view class='buybtn' bindtap='buybutton'>
-  购买
+  加入购物车
 </view>
 

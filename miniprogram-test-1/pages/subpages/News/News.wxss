@@ -1,5 +1,10 @@
 /* pages/news/news.wxss */
 /**index.wxss**/
+.swiper {
+  padding-top:0rpx !important;
+  width:100%;
+  height:310rpx;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -306,20 +311,20 @@ border-radius:4px;
 
 /* 商城重写样式 */
 .produce{
-  padding: 15rpx;
+  padding: 35rpx;
   padding-top: 30rpx;
 }
 .item{
   margin:15rpx;
-  width: 330rpx;
-  height: 520rpx;
+  width: 310rpx;
+  height: 390rpx;
   background: #fff;
   display: inline-block;
   vertical-align: top;
 }
 .goods{
   width: 100%;
-  height: 300rpx;
+  height: 266rpx;
 }
 .producebox{
   white-space: nowrap;
@@ -328,7 +333,7 @@ border-radius:4px;
   margin: 0px auto;
   margin-top:15rpx;
   margin-bottom:15rpx;
-  width: 300rpx;
+  width: 266rpx;
   font-size: 15px;
   color: #444;
 }
@@ -343,20 +348,29 @@ border-radius:4px;
   margin-top: 5rpx;
 }
 .price{
-  color: #f39700;
+  color: #259c71;
   display: inline-block;
   width: 45%;
   line-height: 30px;
 }
 .buy{
   margin-top: 5rpx;
-  background: #00a29a;
+  background:inherit;
   color: #fff;
   display: inline-block;
   width: 45%;
   text-align: center;
-  border-radius:10rpx;
+  border:none;
   line-height: 25px;
   height: 25px;
   font-size: 13px;
+}
+.buycars{
+  padding-top:6rpx;
+  width:36rpx;
+  height:36rpx;
+  float: right;
+}
+.imgbox{
+  padding-top:6rpx;
 }

@@ -1,33 +1,34 @@
 /* pages/home/home.wxss */
 .bg{
   width: 100%;
-  height: 430rpx;
-  background-color:#00a29a;
+  height: 360rpx;
+  background-color:#259c71;
   padding-top: 100rpx;
   display: block;
 }
 .imgBox{
   margin: 0px auto;
-  width: 250rpx;
-  height: 250rpx;
+  width: 230rpx;
+  height: 230rpx;
   border-radius: 50%;
-  border: 4px solid #ebf0f3;
 }
 .smsImage{
   width: 100%;
   height: 100%;
 }
 .conbox{
-  margin-top: 70rpx;
-  background: #fff;
 }
 .useli{
-  border-bottom: 1rpx solid #f0f0f0;
+  border-top: 1rpx solid #ededed;
+  border-bottom: 1rpx solid #ededed;
+  background: #fff;
+  margin-top:8rpx;
   height: 60rpx;
   padding: 15rpx 30rpx;
 }
 .icons{
-  width: 50rpx;
+  width: 54rpx;
+  height:54rpx;
   vertical-align: middle;
 }
 .title{

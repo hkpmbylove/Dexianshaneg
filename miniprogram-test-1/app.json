@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/login/login",
+    "pages/subpages/News/News",
+    "pages/subpages/mall/buy/buy",
+    "pages/subpages/mall/detail/detail",
+    "pages/subpages/mall/cars/cars",
     "pages/index/index",
     "pages/home/home",
     "pages/news/news",
@@ -14,10 +17,7 @@
     "pages/subpages/Contact/Contact",
     "pages/subpages/Cooperator/Cooperator",
     "pages/subpages/Guest/Guest",
-    "pages/subpages/News/News",
     "pages/subpages/live/live",
-    "pages/subpages/mall/buy/buy",
-    "pages/subpages/mall/detail/detail",
     "pages/subpages/Registor/Registor",
     "pages/subpages/Reg/student/student",
     "pages/subpages/Reg/vip/vip",
@@ -35,13 +35,39 @@
     "pages/homeMy/inform/inform",
     "pages/homeMy/invitation/invitation",
     "pages/homeMy/invoice/invoice",
+    "pages/homeMy/order/order",
+    "pages/homeMy/address/address",
     "pages/homeMy/instruction/instruction"
    
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#0ba29b",
-    "navigationBarTitleText": "IEEE IV 2018",
+    "navigationBarBackgroundColor": "#259c71",
+    "navigationBarTitleText": "求知书店商城",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/subpages/News/News",
+        "text": "首页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/homea.png"
+      },
+      {
+        "pagePath": "pages/subpages/mall/cars/cars",
+        "text": "购物车",
+        "iconPath": "images/tabbar/cars.png",
+        "selectedIconPath": "images/tabbar/carsa.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "images/tabbar/me.png",
+        "selectedIconPath": "images/tabbar/mea.png"
+      }
+    ]
   }
 }

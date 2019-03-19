@@ -1,17 +1,22 @@
 swiper{
   padding: 0px;
-  height: 750rpx;
+  height: 730rpx;
+  margin:10rpx;
+  width:auto;
+  border:1rpx solid #ededed;
 }
 .produce{
+  margin:10rpx;
   padding: 15rpx 30rpx;
   background: #fff;
   color: #888;
   font-size: 12px;
-  border-top:1rpx solid #f7f7f7;
+  border:1rpx solid #ededed;
 }
 .title{
   color: #444;
-  font-size: 15px;
+  font-size: 30rpx;
+  line-height:60rpx;
 }
 .head{
   width: 70%;
@@ -20,14 +25,17 @@ swiper{
 .price{
   width: 25%;
   display: inline-block;
-  color: #f39700;
-  font-size: 26px;
+  color: #c79658;
+  font-size: 52rpx;
   text-align: right;
 }
 .detail{
-  margin-top:5rpx;
-  margin-bottom:1rpx;
   line-height: 40px;
+  margin:10rpx;
+  margin-top:5rpx;
+  margin-bottom:0rpx;
+  width:auto;
+  border:1rpx solid #ededed;
   text-align: center;
   color: #888;
   font-size: 13px;
@@ -37,11 +45,15 @@ image.img{
   width: 100%;
 }
 .probox{
+  margin:10rpx;
+  margin-top:0rpx;
   padding-bottom:90rpx; 
   background: #fff;
   padding: 30rpx;
   color: #888;
   font-size: 14px;
+  border:1rpx solid #ededed;
+  border-top: none;
 }
 .buybtn{
   width: 200rpx;
@@ -49,9 +61,10 @@ image.img{
   position: fixed;
   bottom: 10rpx;
   right:30rpx;
-  background:#00a29a;
+  background:#259c71;
   color:#fff;
   text-align: center;
   line-height: 80rpx;
   border-radius: 40rpx;
+  font-size:30rpx;
 }

@@ -1,0 +1,21 @@
+<view>
+  <view class='box'>
+    <image src='{{proThumimage}}' class='bann'></image>
+    <view class='right boxinform'>
+      <text>{{proName}} \n</text>
+      <text class="intro">{{proInstructions}}</text>
+      <view>
+        <view class='left price'>￥<text class='yellow'>{{proPrice}}</text></view>
+        <view class='right num'>x{{num}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='box'>
+    <text class='numput'>购买数量</text>
+    <view class='right'>
+      <view class='button' bindtap="bindMinus">-</view>
+      <input type="number" bindchange="bindManual" class='inputnum' value="{{num}}" /> 
+      <view class='button' bindtap="bindPlus">+</view>
+    </view>
+  </view>
+</view>

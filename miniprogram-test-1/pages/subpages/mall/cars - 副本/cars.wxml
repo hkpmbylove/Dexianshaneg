@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view>
+  <view class='carst'>
+    <view class='green'></view>
+    求知书店商城
+  </view>
+  <view class='box'>
+    <view class='radiobox'>
+      <image catchtap='onSelextTap' wx:if="{{collected}}"  src='./../../../../images/select.png' class='radios'></image>
+      <image catchtap='onSelextTap' wx:else src='./../../../../images/selea.png' class='radios'></image>
+    </view>
+    <image src='{{proThumimage}}' class='bann'></image>
+    <view class='right price'>￥{{proPrice}}</view>
+    <view class='right boxinform'>
+      <text>{{proName}} \n</text>
+      <text class="intro">{{proInstructions}}</text> 
+      <!-- <view class='right num'>x{{num}}</view> -->
+    </view>
+    
+  </view>
+  <view class='boxnum'>
+    <text class='numput'>购买数量</text>
+    <view class='right'>
+      <view class='button' bindtap="bindMinus">-</view>
+      <input type="number" bindchange="bindManual" class='inputnum' value="{{num}}" /> 
+      <view class='button' bindtap="bindPlus">+</view>
+    </view>
+  </view>
+</view>
+
+
+<view class='bottom'>
+  <view class='radioboxtotal'><image src='./../../../../images/selea.png' class='radios'></image>全选</view>
+  <view class='total yellow'>合计：￥{{totalMoney}}</view>
+  <view class='pay' bindtap='pay'>结算（0）</view>
+</view>

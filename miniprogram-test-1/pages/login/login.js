@@ -104,8 +104,8 @@ Page({
                   }
                 })
               } else if(res.data.msg=="LOGINSUCCESS"){
-                wx.switchTab({
-                  url: '/pages/index/index',
+                wx.redirectTo({
+                  url: 'pages/index/index',
                   success:function(){
                     // wx.showLoading({
                     //   title: '登陆成功',
@@ -120,7 +120,7 @@ Page({
                   }
                 })
               } else if (res.data.msg == "REGISTEREDSUCCESS"){
-                wx.switchTab({
+                wx.redirectTo({
                   url: '/pages/index/index',
                   success: function () {
                     wx.showLoading({
@@ -139,7 +139,7 @@ Page({
               } else if (res.data.msg == "ADMINLOGINSUCCESS"){
                 console.log(res.data.msg);
                 wx.redirectTo({
-                  url: '/pages/subpages/News/News',
+                  url: '/pages/index/index',
                   success: function () {
                     wx.showLoading({
                       title: '管理员登陆成功',
@@ -266,7 +266,7 @@ Page({
   },
   news: function () {
     wx.navigateTo({
-      url: '../subpages/News/News'
+      url: '/pages/index/index'
     })
   }
 
