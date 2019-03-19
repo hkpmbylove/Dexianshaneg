@@ -94,14 +94,16 @@ Page({
     var openid = app.globalData.token;
     var total = self.data.totalMoney;
     var sence = self.data.sence;
-    console.log(sence)
+    var mark="book";
     wx.request({
       url: serverURL + '/wxPay/wx_pay',
       data: {
         openid: openid,
         title: self.data.proName,
         price: total,
-        phoneNum:phone
+        phoneNum:phone,
+        mark: mark,
+        sence: sence
       },
       header: { 'content-type': 'application/json' },
       success: function (res) {
