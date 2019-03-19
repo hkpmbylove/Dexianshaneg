@@ -1,12 +1,4 @@
 <!--pages/news/news.wxml-->
-<view class="item-header">
-    <view class='left green'>青岛 <text class='point'>∨</text></view>
-    <view class="item-search">
-      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
-       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
-    </view>
-    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />     
- </view>
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
   <block  wx:for="{{imgUrlss}}" wx:key="{{index}}">
@@ -24,7 +16,10 @@
         <text class="intro">{{produceInfo[index].product_Instructions}}</text>
         <view class='gobuy'>
           <view class='left price'>￥{{produceInfo[index].product_price}}</view>
-          <button class='right buy' bindtap='toast' data-index="{{index}}">购买</button>
+           <view class='right imgbox'>
+            <image src='./../../../images/mall/cars.png'  class='buycars' bindtap='toast' data-index="{{index}}" ></image>
+           </view> 
+          <!-- <button class='right buy' bindtap='toast' data-index="{{index}}">购买</button> -->
         </view>
      </view> 
 

@@ -1,21 +1,13 @@
- <view class="item-header">
-    <view class='left green'>青岛 <text class='point'>∨</text></view>
-    <view class="item-search">
-      <image class="item-image" src="./../../../images/index-icon/seach.png" mode="widthFix" />
-       <input class="item-input" placeholder="搜索" focus="{{focus}}" />
-    </view>
-    <image class="code" src="./../../../images/index-icon/code.png" mode="widthFix" />   
- </view>
 
-<view class='subContainer' style='padding-top:90rpx;'>
-  <view wx:if="{{prices==0}}" style="background-image:url('https://www.iv2018.cn/public/images/ieeeImages/top.png');background-repeat:no-repeat;background-size:750rpx;" class='nobox'>
+<view class='subContainer'>
+  <view wx:if="{{prices==0}}"class='nobox'>
     <view class='couponbox'>
       <image src='./../../../images/me/coupon.png' class='coupon'></image>
     </view>
     <text>您暂未购买票券！ \n</text>
     <text class="sub">请到参会注册界面进行购买。</text>
   </view>
-     <view wx:else="{{prices!==0}}" style="background-image:url('https://www.iv2018.cn/public/images/ieeeImages/top.png');background-repeat:no-repeat;background-size:750rpx;">
+     <view wx:else="{{prices!==0}}">
     <form bindsubmit='formSubmit'>
       <view class='box1'>
         <text class='title'>发票详情：</text>
@@ -71,7 +63,7 @@
   
 </view>
 
-<view class='tarbar'>
+<!-- <view class='tarbar'>
   <view class='tarbarlist'>
     <view>
         <image class='tabbarimg' src='./../../../images/tabbar/home.png' mode='widthFix' bindtap='home'></image>
@@ -86,4 +78,4 @@
     <view><image class='tabbarimg' src='./../../../images/tabbar/admina.png' mode='widthFix'></image></view>
     <view class='tabbartext greencol'>我的</view>
   </view>
-</view>
+</view> -->

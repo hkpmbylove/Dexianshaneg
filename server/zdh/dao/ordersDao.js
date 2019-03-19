@@ -4,7 +4,6 @@ var $util = require('../util/util');
 var $sql = require('./ordersSqlMapping');
 var time=require('../util/TimeUtil');
 var async = require('async');
-var time=require('../util/TimeUtil');
  
 // 使用连接池，提升性能
 var pool  = mysql.createPool($util.extend({},$conf.mysql));

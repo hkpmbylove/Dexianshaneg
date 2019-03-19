@@ -10,12 +10,18 @@ var request=require('request');
 var Redis=require('redis');
 var adminDao=require('../dao/adminDao');
 var client=require('../Redis/RedisServer');
-
+var util=require('../util/Qrcodeutil');
 
 
 
 
 router.all('/',function(req,res){
+    // var opt={}
+    // opt.scene="qaii";
+    // opt.filename="index"
+   //var log= util.create(opt);
+   //console.log(util.create(opt));
+
     // request.get({
     //     uri: 'https://api.weixin.qq.com/cgi-bin/token?',
     //     json: true,

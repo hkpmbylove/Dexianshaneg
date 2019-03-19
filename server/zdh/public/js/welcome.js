@@ -192,6 +192,80 @@ $("#liveManage-btn").on('click',function(){
     $(".news-box").remove();
     $(".main-right").append(liveManage);
 })
+//添加二维码信息
+$("#addQrcode").on('click',function(){
+    $.ajax({
+        type: "POST", 
+        url:"/dexiansheng/deSirQrcodeInfo",
+        data:{
+            sign:"qaii"
+        },
+        success:function(data){
+            if(data){
+                alert(data)
+            }
+        }
+    })
+})
+
+//查询二维码信息列表
+$("#findQrcode").on('click',function(){
+    $.ajax({
+        type: "POST", 
+        url:"/dexiansheng/findSirQrcodeList",
+        data:{
+            sign:"qaii"
+        },
+        success:function(data){
+            if(data){
+                alert(JSON.stringify(data))
+            }else{
+                alert("Err")
+            }
+        }
+    })
+})
+//删除二维码信息
+$("#dellQrcode").on('click',function(){
+    var id="12";
+    $.ajax({
+        type: "POST", 
+        url:"/dexiansheng/dellSirQrcodeList",
+        data:{
+            id:id
+        },
+        success:function(data){
+            if(data){
+                alert(JSON.stringify(data))
+            }else{
+                alert("Err")
+            }
+        }
+    })
+})
+//修改二维码信息
+$("#updateQrcode").on('click',function(){
+    var id="12";
+    var sign="pxgzs";
+    $.ajax({
+        type: "POST", 
+        url:"/dexiansheng/updateQrcodeList",
+        data:{
+            id:id,
+            sign:sign
+        },
+        success:function(data){
+            if(data){
+                alert(JSON.stringify(data))
+            }else{
+                alert("Err")
+            }
+        }
+    })
+})
+
+
+
         //图片显示
         function preview() {
               alert(234666);

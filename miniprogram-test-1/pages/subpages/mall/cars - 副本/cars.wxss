@@ -1,0 +1,154 @@
+/* pages/Schedule/Schedule.wxss */
+.bann{
+  border: 1rpx solid #dedede;
+  width: 140rpx;
+  height: 140rpx;
+  vertical-align:middle;
+  margin-left:10rpx;
+}
+.boxinform{
+  width: 380rpx;
+  font-size: 15px;
+  color: #444;
+  display: inline-block;
+}
+.intro{
+  font-size: 12px;
+  color: #888;
+}
+.boxtitle{
+  border-bottom: 1rpx solid #f7f7f7;
+  padding: 30rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  background: #fff;
+  font-size: 12px;
+  color: #888;
+}
+.box{
+  margin-bottom: 5rpx;
+  padding: 30rpx;
+  background: #fff;
+  font-size: 12px;
+  color: #444;
+}
+.boxnum{
+  margin-bottom: 5rpx;
+  padding:15rpx 30rpx;
+  background: #fff;
+  font-size: 12px;
+  color: #444;
+}
+.yellow{
+  color:#d1534d;
+}
+
+.green1{
+  color: #00a29a;
+}
+
+.con{
+  height: 300rpx;
+}
+.bottom{
+  padding: 0rpx 30rpx;
+  position: fixed;
+  width: auto;
+  bottom: 0rpx;
+  height: 92rpx;
+  z-index: 1000;
+  background: #fff;
+  border-top:#dedede 1px solid;
+}
+.total{
+  width: 250rpx;
+  text-align: center;
+  display: inline-block;
+  line-height: 92rpx;
+  font-size: 30rpx;
+}
+.pay{
+  width: 170rpx;
+  height: 66rpx;
+  text-align: center;
+  background: #d1534d;
+  color: #fff;
+  display: inline-block;
+  line-height: 66rpx;
+  border-radius:33rpx 33rpx;
+  font-size:26rpx; 
+}
+.price{
+  display: inline-block;
+  /* line-height: 30px; */
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #666;
+}
+.num{
+  color: #888;
+  line-height: 30px;
+}
+.numput{
+  line-height: 25px;
+}
+.button{
+  padding: 0px;
+  height: 25px;
+  width: 25px;
+  color: #888;
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  background: #f7f7f7;
+  border-radius: 10rpx;
+  border: 1rpx solid #f0f0f0;
+  vertical-align: top;
+}
+.inputnum{
+  width: 50rpx;
+  text-align: center;
+  display: inline-block;
+  line-height: 25px;
+  vertical-align: top;
+}
+.carst{
+  padding-left:90rpx;
+  height:70rpx;
+  width: 100%;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  color:#666;
+  background:#f0f0f0;
+  border-bottom:1px solid #dedede;
+
+}
+.green{
+  background: #259c71;
+  border-radius: 50%;
+  width:18rpx;
+  height:18rpx;
+  morgin-top:10rpx;
+  position:absolute;
+  top:27rpx;
+  left:50rpx;
+}
+.radiobox{
+  width:40rpx;
+  display:inline-block;
+  vertical-align:middle;
+
+}
+.radioboxtotal{
+  width:270rpx;
+  display:inline-block;
+  vertical-align:middle;
+  font-size: 30rpx;
+  color: #666;
+}
+.radios{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: middle;
+}

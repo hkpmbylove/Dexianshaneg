@@ -1,6 +1,7 @@
 <!--index.wxml-->
-<view class='boxtitle'>
-  <text>来自IEEE IV 2018</text>
+<view class='carst'>
+<view class='green'></view>
+  求知书店商城
 </view>
 <view class='box'>
   <image src='{{proThumimage}}' class='bann'></image>
@@ -8,22 +9,10 @@
     <text>{{proName}} \n</text>
     <text class="intro">{{proInstructions}}</text>
     <view>
-       <view class='left price'>￥<text class='yellow'>{{proPrice}}</text></view>
+       <view class='left price yellow'>￥{{proPrice}}</view>
        <view class='right num'>x{{num}}</view>
     </view>
   </view>
-</view>
-<view class='box'>
-  <text class='numput'>购买数量</text>
-  <view class='right'>
-    <view class='button' bindtap="bindMinus">-</view>
-    <input type="number" bindchange="bindManual" class='inputnum' value="{{num}}" /> 
-    <view class='button' bindtap="bindPlus">+</view>
-  </view>
-</view>
-<view class='box con'>
-  <text class='green1'>退款说明：\n</text>
-  <text>由于本活动各项资源需提前采购且数量有限，一经售出概不接受退款。</text>
 </view>
 
 <view class='bottom'>

@@ -5,35 +5,26 @@
     </view>
   </view>
   <view class='conbox'>
-  <!--票券-->
-  <navigator url='../homeMy/ticket/ticket'>
+   <!--我的订单-->
+  <navigator url='../homeMy/order/order'>
     <view class='useli'>
-      <image src='../../images/me/icon1.png' class="icons" style="height:35rpx;"></image>
-      <text class="title">我的票券</text>
+      <image src='../../images/me/order.png' class="icons"></image>
+      <text class="title">我的订单</text>
       <text class='right'> > </text>
     </view>
   </navigator>
-    <!--通知-->
-  <navigator url='../homeMy/inform/inform'>
+   <!--收货地址-->
+  <navigator url='../homeMy/address/address'>
     <view class='useli'>
-      <image src='../../images/me/icon2.png' class="icons" style="height:43rpx;"></image>
-      <text class="title">我的通知</text>
+      <image src='../../images/me/address.png' class="icons"></image>
+      <text class="title">收货地址</text>
       <text class='right'> > </text>
     </view>
   </navigator>
-    <!--发票-->
   <navigator url='../homeMy/invoice/invoice'>
     <view class='useli'>
-      <image src='../../images/me/icon3.png' class="icons" style="height:32.7rpx;"></image>
+      <image src='../../images/me/ticket.png' class="icons"></image>
       <text class="title">我的发票</text>
-      <text class='right'> > </text>
-    </view>
-  </navigator>
-    <!--邀请函-->
-  <navigator url='../homeMy/invitation/invitation'>
-    <view class='useli'>
-      <image src='../../images/me/icon4.png' class="icons" style="height:50rpx;"></image>
-      <text class="title">我的邀请函</text>
       <text class='right'> > </text>
     </view>
   </navigator>

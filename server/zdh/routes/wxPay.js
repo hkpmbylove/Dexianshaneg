@@ -33,7 +33,8 @@ router.all('/wx_pay', function(req, res, next) {
              var out_trade_no = wxConfig.getWxPayOrdrID();
             // var spbill_create_ip = req.ip.replace(/::ffff:/, ''); // 获取客户端ip
              var spbill_create_ip= get_client_ip(req);
-             var notify_url = 'https://www.iv2018.cn/wxPay/wxPaycallback' // 支付成功的回调地址  可访问 不带参数
+             //var notify_url = 'https://www.iv2018.cn/wxPay/wxPaycallback'; // 支付成功的回调地址  可访问 不带参数
+             var notify_url = 'http://56c6aa6e.ngrok.io//wxPay/wxPaycallback';
              var nonce_str = ManthNum(); // 随机字符串
              var bodyData = '<xml>';
              bodyData += '<appid>' + wxConfig.AppID + '</appid>';  // 小程序ID
@@ -87,7 +88,7 @@ router.all('/wx_pay', function(req, res, next) {
                              orderinfo.tname=param.title;
                              orderinfo.phoneNum=phoneNum;
                              orderinfo.startTime=timestamp;
-                             orderinfo.mark=mark;
+                             orderinfo.mark=sence;
                              ordersInfo.insertInfo(orderinfo,function(data){
                                 if(data){
                                     var msg="SUCCESS";
@@ -114,6 +115,7 @@ router.all('/wx_pay', function(req, res, next) {
      });
 })
 router.post('/wxPaycallback', function(req, res, next) {
+    console.log(111);
     var body = req.body.xml;
     parseString(body,function(err,result){    
         if(body.return_code=="SUCCESS"){

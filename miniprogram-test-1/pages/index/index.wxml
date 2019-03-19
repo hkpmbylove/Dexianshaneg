@@ -7,7 +7,7 @@
     </view>
     <image class="code" src="./../../images/index-icon/code.png" mode="widthFix" />
       
- </view>
+ </view> 
 
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true" autoplay="true">
