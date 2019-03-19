@@ -1,21 +1,51 @@
-<view>
-  <view class='box'>
-    <image src='{{proThumimage}}' class='bann'></image>
-    <view class='right boxinform'>
-      <text>{{proName}} \n</text>
-      <text class="intro">{{proInstructions}}</text>
-      <view>
-        <view class='left price'>￥<text class='yellow'>{{proPrice}}</text></view>
-        <view class='right num'>x{{num}}</view>
-      </view>
+<view class='carst'>
+<view class='green'></view>
+  求知书店商城
+</view>
+<view class="cart-box">
+    <!-- wx:for 渲染购物车列表 -->
+    <view wx:for="{{carts}}">
+        <!-- 显示商品 -->
+        <view class='box'>
+          <view class='radiobox'>
+            <image wx:if="{{item.selected}}" src='./../../../../images/select.png' class='radios' bindtap="selectList" data-index="{{index}}"></image>
+            <image wx:else src='./../../../../images/selea.png' class='radios' bindtap="selectList" data-index="{{index}}"></image>
+          </view>
+          <navigator url="../details/details?id={{item.id}}" class='navto'>
+            <image class='bann' src="{{item.image}}"></image>
+          </navigator>
+          <!-- 删除按钮 -->
+          <view class='right pridel'>
+            <view class=" price">￥{{item.price}}</view>
+             <image src='./../../../../images/del.png' bindtap="deleteList" data-index="{{index}}" class="delimg" ></image>
+          </view>
+          
+          <view class='right boxinform'>
+            <text>{{item.title}} \n</text>
+            <text class="intro">{{item.title}}{{item.title}}</text> 
+            <!-- <view class='right num'>x{{num}}</view> -->
+          </view>          
+        </view>
+        <!-- 增加减少数量按钮 -->
+         <view class='boxnum'>
+            <text class='numput'>购买数量</text>
+            <view class='right'>
+              <view class='button' bindtap="minusCount" data-index="{{index}}">-</view>
+              <!-- <text>{{item.num}}</text> -->
+              <input type="number" class='inputnum' value="{{item.num}}" /> 
+              <view class='button' bindtap="addCount" data-index="{{index}}">+</view>
+            </view>
+          </view>
     </view>
+</view>
+
+<!-- 底部操作栏 -->
+<view class='bottom'>
+  <view class='radioboxtotal'>
+    <image wx:if="{{selectAllStatus}}" src='./../../../../images/select.png' class='radios' bindtap="selectAll"></image>
+    <image wx:else src='./../../../../images/selea.png' class='radios' bindtap="selectAll"></image>
+    全选
   </view>
-  <view class='box'>
-    <text class='numput'>购买数量</text>
-    <view class='right'>
-      <view class='button' bindtap="bindMinus">-</view>
-      <input type="number" bindchange="bindManual" class='inputnum' value="{{num}}" /> 
-      <view class='button' bindtap="bindPlus">+</view>
-    </view>
-  </view>
+  <view class='total yellow'>合计：￥{{totalPrice}}</view>
+  <view class='pay' bindtap='pay'>结算（0）</view>
 </view>

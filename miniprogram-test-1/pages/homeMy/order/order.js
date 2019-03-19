@@ -1,204 +1,106 @@
 // pages/Schedule/Schedule.js
-import host from '../../../../host/host';
+import host from '../../../host/host';
 var serverURL = host.SERVER_URL;
 var app = getApp();
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-    ],
-    indicatorDots: false,
-    autoplay: false,
-    interval: 5000,
-    duration: 1000,
-    proList: null,
-    wxphone: "",
-    smsphone: "",
-    proName: '',
-    proPrice: '',
-    proInstructions: '',
-    proDetails: '',
-    proImage: '',
-    proThumimage: '',
-    num: '1',
-    minusStatus: 'disabled',
-    totalMoney: 0,
-    sence: ""
+    carts: [],               // 购物车列表
+    hasList: false,          // 列表是否有数据
+    totalPrice: 0,           // 总价，初始为0
+    selectAllStatus: true    // 全选状态，默认全选
   },
-  /* 点击减号 */
-  bindMinus: function () {
-    var num = this.data.num;
-    var price = this.data.proPrice;
-    var total = this.data.totalMoney;
-
-    // 如果大于1时，才可以减  
-    if (num > 1) {
-      num--;
+  onShow() {
+    this.setData({
+      hasList: true,        // 既然有数据了，那设为true吧
+      carts: [
+        { id: 1, title: '新鲜芹菜 半斤', image: 'https://www.iv2018.cn/public/images/productimag/1529395205095.jpg', num: 4, price: 0.01, selected: true },
+        { id: 2, title: '素米 500g', image: 'https://www.iv2018.cn/public/images/productimag/1529395205095.jpg', num: 1, price: 0.03, selected: true }
+      ],
+    });
+  },
+  getTotalPrice() {
+    let carts = this.data.carts;                  // 获取购物车列表
+    let total = 0;
+    for (let i = 0; i < carts.length; i++) {         // 循环列表得到每个数据
+      if (carts[i].selected) {                   // 判断选中才会计算价格
+        total += carts[i].num * carts[i].price;     // 所有价格加起来
+      }
     }
-    total = (num * 10) * (price * 10);
-    total = total / 100;
-    // 只有大于一件的时候，才能normal状态，否则disable状态  
-    var minusStatus = num <= 1 ? 'disabled' : 'normal';
-    // 将数值与状态写回  
-    this.setData({
-      num: num,
-      minusStatus: minusStatus,
-      totalMoney: total
+    this.setData({                                // 最后赋值到data中渲染到页面
+      carts: carts,
+      totalPrice: total.toFixed(2)
     });
   },
-  /* 点击加号 */
-  bindPlus: function () {
-    var num = this.data.num;
-    var price = this.data.proPrice;
-    var total = this.data.totalMoney;
-    // 不作过多考虑自增1  
-    num++;
-    total = (num * 10) * (price * 10);
-    total = total / 100;
-    // 只有大于一件的时候，才能normal状态，否则disable状态  
-    var minusStatus = num < 1 ? 'disabled' : 'normal';
-    // 将数值与状态写回  
+  selectList(e) {
+    const index = e.currentTarget.dataset.index;    // 获取data- 传进来的index
+    let carts = this.data.carts;                    // 获取购物车列表
+    const selected = carts[index].selected;         // 获取当前商品的选中状态
+    carts[index].selected = !selected;              // 改变状态
     this.setData({
-      num: num,
-      minusStatus: minusStatus,
-      totalMoney: total
+      carts: carts
     });
+    this.getTotalPrice();                           // 重新获取总价
   },
-  /* 输入框事件 */
-  bindManual: function (e) {
-    var num = e.detail.value;
-    // 将数值与状态写回  
+  selectAll(e) {
+    let selectAllStatus = this.data.selectAllStatus;    // 是否全选状态
+    selectAllStatus = !selectAllStatus;
+    let carts = this.data.carts;
+
+    for (let i = 0; i < carts.length; i++) {
+      carts[i].selected = selectAllStatus;            // 改变所有商品状态
+    }
     this.setData({
-      num: num
+      selectAllStatus: selectAllStatus,
+      carts: carts
     });
+    this.getTotalPrice();                               // 重新获取总价
   },
-  /*金额合计 */
-  bindTotal: function (e) {
-    var total = e.detail.value;
-    // 将数值与状态写回  
+  // 增加数量
+  addCount(e) {
+    const index = e.currentTarget.dataset.index;
+    let carts = this.data.carts;
+    let num = carts[index].num;
+    num = num + 1;
+    carts[index].num = num;
     this.setData({
-      tolnum: total
+      carts: carts
     });
+    this.getTotalPrice();
   },
-  // 支付方法
+  // 减少数量
+  minusCount(e) {
+    const index = e.currentTarget.dataset.index;
+    let carts = this.data.carts;
+    let num = carts[index].num;
+    if (num <= 1) {
+      return false;
+    }
+    num = num - 1;
+    carts[index].num = num;
+    this.setData({
+      carts: carts
+    });
+    this.getTotalPrice();
+  },
+  deleteList(e) {
+    const index = e.currentTarget.dataset.index;
+    let carts = this.data.carts;
+    carts.splice(index, 1);              // 删除购物车列表里这个商品
+    this.setData({
+      carts: carts
+    });
+    if (!carts.length) {                  // 如果购物车为空
+      this.setData({
+        hasList: false              // 修改标识为false，显示购物车为空页面
+      });
+    } else {                              // 如果不为空
+      this.getTotalPrice();           // 重新计算总价格
+    }
+  },
+  //结算
   pay: function () {
-    var self = this;
-    var phone = self.data.wxphone;
-
-    var openid = app.globalData.token;
-    var total = self.data.totalMoney;
-    var sence = self.data.sence;
-    console.log(sence)
-    wx.request({
-      url: serverURL + '/wxPay/wx_pay',
-      data: {
-        openid: openid,
-        title: self.data.proName,
-        price: total,
-        phoneNum: phone
-      },
-      header: { 'content-type': 'application/json' },
-      success: function (res) {
-        if (res.data == "err") {
-          wx.showModal({
-            title: '提示',
-            content: '登陆过期',
-            complete: function () {
-              wx.redirectTo({
-                url: '/pages/login/login',
-                success: function () {
-                  app.login();
-                }
-              })
-            }
-          })
-        } else if (res.data.status == "102") {
-          wx.showModal({
-            title: '提示',
-            content: "服务器错误",
-          })
-        } else if (res.data.status == 100) {
-          var payModel = res.data;
-          wx.requestPayment({
-            'timeStamp': payModel.timestamp,
-            'nonceStr': payModel.nonceStr,
-            'package': payModel.package,
-            'signType': 'MD5',
-            'paySign': payModel.paySign,
-            'success': function (res) {
-              wx.showToast({
-                title: '支付成功',
-                icon: 'success',
-                duration: 2000,
-                complete: function () {
-                  wx.redirectTo({
-                    url: '../../News/News'
-                  })
-                }
-              })
-            },
-            'fail': function (res) {
-              if (res.errMsg == "requestPayment:fail cancel") {
-                wx.showToast({
-                  title: '取消支付',
-                  icon: 'fail',
-                  duration: 2000,
-                })
-              } else {
-                wx.showModal({
-                  title: '提示',
-                  content: "支付发起失败",
-                })
-              }
-            }
-          })
-        }
-      }
-    })
-
-  },
-  onLoad: function (options) {
-    var self = this;
-    var name = wx.getStorageSync('name');
-    var price = wx.getStorageSync('price');
-    var Instructions = wx.getStorageSync('Instructions');
-    var details = wx.getStorageSync('details');
-    var image = wx.getStorageSync('image');
-    var thumimage = wx.getStorageSync('thumimage');
-    self.setData({
-      proName: name,
-      proPrice: price,
-      proInstructions: Instructions,
-      proDetails: details,
-      proImage: image,
-      proThumimage: thumimage,
-      totalMoney: price
+    wx.navigateTo({
+      url: '../buy/buy',
     })
   },
-
-  onShow: function () {
-    var self = this;
-    wx.getStorage({
-      key: 'wxphone',
-      success: function (res) {
-        self.setData({
-          wxphone: res.data
-        })
-      }
-    }),
-      wx.getStorage({
-        key: 'sence',
-        success: function (res) {
-          self.setData({
-            sence: res.data
-          })
-        },
-      })
-  }
 })

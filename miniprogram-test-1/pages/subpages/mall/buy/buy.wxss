@@ -96,3 +96,24 @@
   line-height: 25px;
   vertical-align: top;
 }
+.carst{
+  padding-left:90rpx;
+  height:70rpx;
+  width: 100%;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  color:#666;
+  background:#f0f0f0;
+  border-bottom:1px solid #dedede;
+
+}
+.green{
+  background: #259c71;
+  border-radius: 50%;
+  width:18rpx;
+  height:18rpx;
+  morgin-top:10rpx;
+  position:absolute;
+  top:27rpx;
+  left:50rpx;
+}

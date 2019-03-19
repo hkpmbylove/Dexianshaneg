@@ -1,6 +1,7 @@
 <!--index.wxml-->
-<view class='boxtitle'>
-  <text>来自IEEE IV 2018</text>
+<view class='carst'>
+<view class='green'></view>
+  求知书店商城
 </view>
 <view class='box'>
   <image src='{{proThumimage}}' class='bann'></image>
