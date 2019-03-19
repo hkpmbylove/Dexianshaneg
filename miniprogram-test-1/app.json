@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/subpages/News/News",
     "pages/subpages/mall/buy/buy",
     "pages/subpages/mall/detail/detail",

@@ -104,7 +104,7 @@ Page({
                   }
                 })
               } else if(res.data.msg=="LOGINSUCCESS"){
-                wx.redirectTo({
+                wx.switchTab({
                   url: '/pages/subpages/News/News',
                   success:function(){
                     // wx.showLoading({
